@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="Layout(props)">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title}"></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <!-- header start  -->
+    <div class="top-haeder">
+        <div class="container-fluid top">
+            <div class="left">
+                <h1><a href="index.html"><img src="/img/logo.png"></a></h1>
+                <div class="report-search search-box">
+                    <div class="form-group mb-0">
+                        <img src="/img/search.svg" class="search-icon">
+                        <input type="text" id="searchStatement" placeholder="Search Events" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <!-- top right  -->
+            <div class="right right-login">
+                <a href="#" class="balance dropdown-toggle" id="top_menu_popup" data-bs-toggle="dropdown">
+                    main balance <span>pin 0.00</span>
+                    exposure <span>0.00</span>
+                    <span class="four-d">+4</span>
+                </a>
+                <a href="#" class="img-cricle balance">
+                    <img src="/img/transparent.gif">
+                </a>
+                <p class="loading-bar" id="menuRefreshLoading" style="display: none;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
+    
+                <!-- popup start     -->
+                <div class="dropdown-menu wallet-detail" id=" top_menu_popup multiBalancePop">
+                    <div class="wallet-detail-group">
+                        <dl class="wallet-detail-content">
+                            <dt>Main Balance</dt>
+                            <dd class="wallet-balance-num"> <span class="badge-currency" id="currency">PIN</span><span id="mainBalance">0.00</span></dd>
+                            <dd class="wallet-exposure">Exposure <span id="mainExposure">0.00</span></dd>
+                        </dl>
+                    </div>
+                    <div id="walletContent" class="wallet-detail-group">
+                        <dl id="tempDl" class="wallet-detail-content">
+                            <dt id="vendorTitle_1">Casino Balance</dt>
+                            <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency_1">PIN</span><span id="vendorBalance_1">0</span></dd>
+                            <dd class="wallet-recall"><button class="btn-recall" id="recall_1" onclick="TopMenuHandler.recall('1')">Recall</button></dd>
+                        </dl>
+                        <dl id="tempDl" class="wallet-detail-content">
+                            <dt id="vendorTitle_5">SABA Balance</dt>
+                            <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency_5">PIN</span><span id="vendorBalance_5">0</span></dd>
+                            <dd class="wallet-recall"><button class="btn-recall" id="recall_5" onclick="TopMenuHandler.recall('5')">Recall</button></dd>
+                        </dl>
+                        <dl id="tempDl" class="wallet-detail-content">
+                            <dt id="vendorTitle_3">BPoker Balance</dt>
+                            <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency_3">PIN</span><span id="vendorBalance_3">0 Points</span></dd>
+                            <dd class="wallet-recall"><button class="btn-recall" id="recall_3" onclick="TopMenuHandler.recall('3')">Recall</button></dd>
+                        </dl>
+                        <dl id="tempDl" class="wallet-detail-content">
+                            <dt id="vendorTitle_4">MT5 Balance</dt>
+                            <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency_4">PIN</span><span id="vendorBalance_4">0</span></dd>
+                            <dd class="wallet-recall"><button class="btn-recall" id="recall_4" onclick="TopMenuHandler.recall('4')">Recall</button></dd>
+                        </dl>
+                        <dl id="recallAllDl" class="wallet-detail-content">
+                            <dd class="align-R"><button class="btn-recall" id="recallAll" onclick="TopMenuHandler.recall('1,5,3')">Recall All</button></dd>
+                        </dl>
+                    </div>
+                    <div id="walletTemp" class="wallet-detail-group" style="display: none;">
+                        <dl id="tempDl" class="wallet-detail-content">
+                            <dt id="vendorTitle">Housie Balance</dt>
+                            <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency">USD</span><span id="vendorBalance">$ 0.00</span></dd>
+                            <dd class="wallet-recall"><button class="btn-recall" id="recall">Recall</button></dd>
+                        </dl>
+                        <dl id="recallAllDl" class="wallet-detail-content">
+                            <dd class="align-R"><button class="btn-recall" id="recallAll">Recall All</button></dd>
+                        </dl>
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn">Close</button>
+                    </div>
+                </div>
+                <!-- popup end  -->
+                <a href="#" class="login1 balance  dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                    <i class="fa fa-user"></i>my account
+                    <!-- <i class="fas fa-caret-down"></i> -->
+                </a>
+                <!-- my account toggle start  -->
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding: 0;">
+                    <li class="li-hover pro-span"><a class="dropdown-item" href="#">manish3936 </a><span>GMT+5:30</span></li>
+                    <!-- <li class="li-hover"><a class="dropdown-item" href="#"> </a></li> -->
+    
+                    <li class="li-hover"><a class="dropdown-item" href="details.html">my profile</a></li>
+                    <li class="li-hover"><a class="dropdown-item" href="balance-overview.html">balance overview</a></li>
+                    <li class="li-hover"><a class="dropdown-item" href="account-statement.html">account statement</a></li>
+                    <li class="li-hover"><a class="dropdown-item" href="my-bets.html">my bets</a></li>
+                    <li class="li-hover"><a class="dropdown-item" href="bet-history.html">bets history</a></li>
+                    <li class="li-hover"><a class="dropdown-item" href="profit-loss.html">profit loss</a></li>
+                    <li class="li-hover"><a class="dropdown-item" href="activity-log.html">activity log</a></li>
+                    <li class="logout-li"><a class="logout" href="logout.html">logout
+                            <img src="">
+                        </a></li>
+                </ul>
+                <!-- my account toggle end  -->
+            </div>
+            <!-- top right end  -->
+        </div>
+        <!-- menu bar start -->
+        <div class="container-fluid">
+            <div class="row top-two">
+                <div class="col-md-8 col-8">
+                    <ul class="menu">
+                        <li><a href="/u-home" class="active">home</a></li>
+                        <li><a href="/u-inplay">In-Play</a></li>
+                        <li><a href="/u-multimarket">multi markets</a></li>
+                        <li>
+                            <a href="/u-cricket">cricket
+                                <span id="tagLive" class="tag-live">
+                                    <strong>
+                                        <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="rgb(255,0,0)" fill-rule="evenodd">
+                                                <path d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z" />
+                                                <circle cx="6.8" cy="4.4" r="1.6" />
+                                            </g>
+                                        </svg>
+                                    </strong>3
+                                </span>
+                            </a>
+                        </li>
+                        <li><a href="/u-soccer">soccer
+                                <span id="tagLive" class="tag-live2">
+                                    <strong>
+                                        <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="rgb(255,0,0)" fill-rule="evenodd">
+                                                <path d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z" />
+                                                <circle cx="6.8" cy="4.4" r="1.6" />
+                                            </g>
+                                        </svg>
+                                    </strong>
+                                    9
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/u-tennis">tennis
+                                <span id="tagLive" class="tag-live3">
+                                    <strong>
+                                        <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="rgb(255,0,0)" fill-rule="evenodd">
+                                                <path d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z" />
+                                                <circle cx="6.8" cy="4.4" r="1.6" />
+                                            </g>
+                                        </svg>
+                                    </strong>
+                                    12
+                                </span>
+                            </a>
+                        </li>
+                        <li><a href="/u-iplwinner">IPL winner</a></li>
+                        <li class="dark_menu-li"><a href="/u-iplwinner" class="casino tag-new">casino</a></li>
+                        <li><a href="/u-result">result</a></li>
+                        <li><a href="/u-binary">Binary</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-4 right">
+                    <ul>
+                        <li>
+                            <a href="#" class="bet"><i class="fas fa-check-square"></i>
+                                one click bet
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" id="settingdropdown" data-bs-toggle="dropdown">setting
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </a>
+                            <!-- setting toggle start  -->
+                            <div id="set_pop" class="dropdown-menu slip_set-pop" href="settingdropdown" style="margin: 6px; padding-top: 0; padding-bottom: 0;">
+                                <div id="coinList" class="set-content">
+                                    <dl class="odds-set">
+                                        <dd class="col-defult">
+                                            <label for="defult_stake"><strong>Default stake</strong></label>
+                                            <input id="userCoin" class="stake-input" type="text" maxlength="7" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl id="stakeSet" class="stake-set">
+                                        <dt>Stake</dt>
+                                        <dd><a id="coin_1" style="cursor:pointer;" class="btn select">1000</a></dd>
+                                        <dd><a id="coin_2" style="cursor:pointer;" class="btn select">10000</a></dd>
+                                        <dd><a id="coin_3" style="cursor:pointer;" class="btn select">30000</a></dd>
+                                        <dd><a id="coin_4" style="cursor:pointer;" class="btn">50000</a></dd>
+                                        <dd><a id="coin_5" style="cursor:pointer;" class="btn select">100000</a></dd>
+                                        <dd><a id="coin_6" style="cursor:pointer;" class="btn">150000</a></dd>
+                                        <dd><a id="coin_7" style="cursor:pointer;" class="btn select">300000</a></dd>
+                                        <dd><a id="coin_8" style="cursor:pointer;" class="btn select">500000</a></dd>
+                                        <dd class="col-edit"><a id="edit" class="btn-edit">Edit<i class="fas fa-pencil-alt"></i></a></dd>
+                                    </dl>
+                                    <dl id="editCustomizeStakeList" class="stake-set" style="display: none;">
+                                        <dt>Stake</dt>
+                                        <dd><input id="stakeEdit_1" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                        <dd><input id="stakeEdit_2" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                        <dd><input id="stakeEdit_3" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                        <dd><input id="stakeEdit_4" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                        <dd><input id="stakeEdit_5" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                        <dd><input id="stakeEdit_6" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                        <dd><input id="stakeEdit_7" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                        <dd><input id="stakeEdit_8" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                        <dd class="col-edit"><a id="ok" class="btn-send">OK</a></dd>
+                                    </dl>
+                                    <dl class="odds-set">
+                                        <dt>Odds</dt>
+                                        <dd>
+                                            <input id="enableSparkCheck" type="checkbox"><label for="enableSparkCheck">Highlight when odds change</label>
+                                        </dd>
+                                    </dl>
+                                    <dl class="odds-set">
+                                        <dt>FancyBet</dt>
+                                        <dd>
+                                            <input id="fancyBetAcceptAnyOddsCheckBox" type="checkbox"><label for="fancy_odd">Accept Any Odds</label>
+                                        </dd>
+                                    </dl>
+                                    <dl class="odds-set">
+                                        <dt>SportsBook</dt>
+                                        <dd>
+                                            <input id="sportsBookAcceptAnyOddsCheckBox" type="checkbox"><label>Accept Any Odds</label>
+                                        </dd>
+                                    </dl>
+                                    <dl class="odds-set">
+                                        <dt>Binary</dt>
+                                        <dd>
+                                            <input id="financialAcceptAnyOddsCheckBox" type="checkbox"><label>Accept Any Price</label>
+                                        </dd>
+                                    </dl>
+    
+                                    <ul class="btn-wrap">
+                                        <li><a id="closeSet" class="cancel cancel" style="cursor:pointer;">Cancel</a></li>
+                                        <li class="col-send"><a id="coinSave" class="btn-send save" style="cursor:pointer;">Save</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- setting toggle end  -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end  -->
+	<div th:replace="${props}"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script th:src="@{'/js/' + ${js}}"></script>
+</body>
+</html>
