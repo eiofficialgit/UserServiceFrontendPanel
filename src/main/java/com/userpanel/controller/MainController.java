@@ -5,55 +5,56 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/user")
 public class MainController {
 	
-	@RequestMapping("/u-home")
+	@RequestMapping("/home")
 	public String admin() {
 		return "home";
 	}
 
-	@RequestMapping("/u-inplay")
+	@RequestMapping("/inplay")
 	public String inplay() {
 		return "inplay";
 	}
 
-	@RequestMapping("/u-multimarket")
+	@RequestMapping("/multimarket")
 	public String multimarket() {
 		return "multimarket";
 	}
 
-	@RequestMapping("/u-cricket")
+	@RequestMapping("/cricket")
 	public String cricket(Model model) {
 		model.addAttribute("title", "Cricket - Sky Exchange");
 		model.addAttribute("js", "cricket.js");
 		return "cricket";
 	}
 
-	@RequestMapping("/u-soccer")
+	@RequestMapping("/soccer")
 	public String soccer(Model model) {
 		model.addAttribute("title", "Soccer - Sky Exchange");
 		model.addAttribute("js", "soccer.js");
 		return "soccer";
 	}
 
-	@RequestMapping("/u-tennis")
+	@RequestMapping("/tennis")
 	public String tennis(Model model) {
 		model.addAttribute("title", "Tennis - Sky Exchange");
 		model.addAttribute("js", "tennis.js");
 		return "tennis";
 	}
 
-	@RequestMapping("/u-iplwinner")
+	@RequestMapping("/iplwinner")
 	public String iplwinner() {
 		return "iplwinner";
 	}
 
-	@RequestMapping("/u-result")
+	@RequestMapping("/result")
 	public String result() {
 		return "result";
 	}
 
-	@RequestMapping("/u-binary")
+	@RequestMapping("/binary")
 	public String binary() {
 		return "binary";
 	}
