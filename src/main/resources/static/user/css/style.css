@@ -86,6 +86,7 @@
 
 .top-two .menu {
     padding: 0;
+    margin-bottom: 0 !important;
 }
 
 .top-two .menu li {
@@ -4433,4 +4434,2101 @@ i.fas.fa-alarm-clock {
     background-size: cover;
     width: 12px;
     height: 12px;
+}
+
+/* New Css */
+.btn-back.spark,.spark.btn-lay,.bets .back-1.spark a,.bets-HS .back-1.spark a,.bets-GH .back-1.spark a,.back-gradient dd.spark a,.lay-gradient dd.spark a{animation:sparkBack 0.5s ease}@keyframes sparkBack{0%{background-color:#72bbef;color:#1e1e1e}50%{background-color:#f8e71c;color:#fff}100%{background-color:#72bbef;color:#1e1e1e}}.bets .back-2.spark a,.bets-HS .back-2.spark a,.bets-GH .back-2.spark a{animation:sparkBack_2 0.5s ease}@keyframes sparkBack_2{0%{background-color:#b7d5eb;color:#1e1e1e}50%{background-color:#f8e71c;color:#fff}100%{background-color:#b7d5eb;color:#1e1e1e}}.bets .back-3.spark a,.bets-HS .back-3.spark a,.bets-GH .back-3.spark a{animation:sparkBack_3 0.5s ease}@keyframes sparkBack_3{0%{background-color:#d7e8f4;color:#1e1e1e}50%{background-color:#f8e71c;color:#fff}100%{background-color:#d7e8f4;color:#1e1e1e}}.btn-lay.spark,.bets .lay-1.spark a,.bets-HS .lay-1.spark a,.bets-GH .lay-1.spark a,.lay-gradient dd.spark a{animation:sparkLay 0.5s ease}@keyframes sparkLay{0%{background-color:#faa9ba;color:#1e1e1e}50%{background-color:#26F1F8;color:#fff}100%{background-color:#faa9ba;color:#1e1e1e}}.bets .lay-2.spark a,.bets-HS .lay-2.spark a,.bets-GH .lay-2.spark a{animation:sparkLay_2 0.5s ease}@keyframes sparkLay_2{0%{background-color:#efd3d9;color:#1e1e1e}50%{background-color:#26F1F8;color:#fff}100%{background-color:#efd3d9;color:#1e1e1e}}.bets .lay-3.spark a,.bets-HS .lay-3.spark a,.bets-GH .lay-3.spark a{animation:sparkLay_3 0.5s ease}@keyframes sparkLay_3{0%{background-color:#f6e6ea;color:#1e1e1e}50%{background-color:#26F1F8;color:#fff}100%{background-color:#f6e6ea;color:#1e1e1e}}
+.match_odds .right-side {
+    padding-left: 0;
+}
+
+.match_odds .right-side .white-right {
+    background: #fff;
+    height: 300px;
+}
+
+.match_odds .right-side .white-right h2 {
+    background: #243a48;
+    color: #fff;
+    height: 25px;
+    font-size: 13px;
+    padding: 5px;
+    border-top: 1px solid #fff;
+    margin-bottom: 0;
+}
+
+.match_odds .right-side .white-right h2 i.fas.fa-minus {
+    float: right;
+    font-size: 7px;
+    border: 1px solid #fff;
+    padding: 1px 1px 0px 1px;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.match_odds .right-side .white-right p {
+    font-size: 13px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.match_odds .center-m {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 630px;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+.match_odds .left-m {
+    background: #fff;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.match_odds .left-m ul li {
+    border-bottom: 1px solid #EFE1C1;
+    margin-left: -33px;
+    padding-left: 11px;
+    height: 27px;
+    cursor: pointer;
+    line-height:25px;
+}
+
+.match_odds .left-m ul li:hover {
+    background: #EFE1C1;
+}
+
+.match_odds .left-m ul li a {
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.match_odds .left-m ul li a i.fas.fa-circle {
+    font-size: 9px;
+    color: #66ac1b;
+    padding: 0 7px 0 0;
+}
+
+.match_odds .left-m ul li i.fa.fa-angle-right {
+    float: right;
+    padding: 3px 4px 1px 4px;
+    background: #ffbd15;
+    font-size: 11px;
+    margin-right: 7px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font-weight: bolder;
+}
+
+.match_odds .center-m .pre-cri h2 {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+    color: #fff;
+    background: #eb6316;
+    border-radius: 0 15px 0px 0;
+    height: 25px;
+    border-bottom: 1px solid #fff;
+    width: 200px;
+    margin-top: 18px;
+    line-height: 2;
+    padding-bottom: 28px;
+    text-decoration: underline;
+    clip-path: polygon(0% 0%, 92% 0%, 95% 39%, 100% 100%, 0 100%, 0% 100%, 0% 0, 0% 0);
+}
+
+.match_odds .center-m h2 i.fas.fa-alarm-clock {
+    color: #ffffff;
+    float: left;
+    font-size: 12px;
+    border: 1px solid #72dd48;
+    border-radius: 4px;
+    background: #72dd48;
+    padding: 2px;
+    font-size: 9px;
+}
+
+.match_odds .center-m .pre-cri p span {
+    background: #bed5d8;
+    color: #000;
+    padding: 1px 20px 2px 20px;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.match_odds .center-multi {
+    padding-left: 0;
+}
+
+/* market page end */
+
+.match_odds .center-m .match-white {
+    background: #fff;
+    height: 55px;
+        margin-bottom: 15px;
+    
+}
+
+.match_odds .center-m .match-white ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.match_odds .center-m .match-white ul .left-svg.select {
+     background-image: url('data:image/svg+xml,<svg width="100" height="25" viewBox="0 0 100 25" xmlns="http://www.w3.org/2000/svg"><path d="M120 0l-8.293 17.752c-1.87 4.003-6.969 7.248-11.377 7.248h-80.661c-4.413 0-9.506-3.243-11.377-7.248l-8.293-17.752h120z" fill="rgb(107,189,17)"/></svg>');
+}
+.match_odds .center-m .match-white ul .left-svg {
+    background-image: url('data:image/svg+xml,<svg width="100" height="25" viewBox="0 0 100 25" xmlns="http://www.w3.org/2000/svg"><path d="M120 0l-8.293 17.752c-1.87 4.003-6.969 7.248-11.377 7.248h-80.661c-4.413 0-9.506-3.243-11.377-7.248l-8.293-17.752h120z" fill="rgb(59,81,96)"/></svg>');
+    padding-left: 59px;
+    height: 25px;
+    width: 20px;
+    padding-right: 41px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    line-height: 26px;
+    font-size: 10px;
+}
+
+.match_odds .center-m .match-white ul .right-svg {
+    background-image: url('data:image/svg+xml,<svg width="100" height="25" viewBox="0 0 100 25" xmlns="http://www.w3.org/2000/svg"><path d="M100 0l-8.293 17.752c-1.87 4.003-6.969 7.248-11.377 7.248h-80.661c-4.413 0-9.506-3.243-11.377-7.248l-8.293-17.752h120z" fill="rgb(59,81,96)"/></svg>');
+    padding-left: 41px;
+    height: 25px;
+    width: 20px;
+    padding-right: 59px;
+    color: #fff;
+    line-height: 26px;
+    font-size: 10px;
+}
+
+.match_odds .center-m .match-white ul li img {
+    height: 18px;
+    width: 18px;
+}
+
+.match_odds .center-m .match-white .odds {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding-left: 0;
+}
+
+.match_odds .center-m .match-white .odds .odds-li {
+    background: #c5d0d7;
+    clip-path: polygon(0 0, 88% 0%, 100% 102%, 0% 100%);
+    border-radius: 0px 50px 0px 0px;
+    font-size: 12px;
+    margin-top: -6px;
+    line-height: 33px;
+    padding: 0 16px 0 6px;
+}
+
+.match_odds .center-m .match-white .odds .img-li {
+    font-size: 13px;
+    line-height: 2;
+}
+
+.match_odds .center-m .match-white .odds .img-li img {
+    height: 16px;
+    width: 17px;
+    background: #66ac1b;
+    padding: 3px;
+    border-radius: 4px;
+    margin-right: 3px;
+}
+
+
+
+.match_odds .center-m .match-white .odds .max-li span {
+    background: #bed5d8;
+    border-radius: 4px;
+    height: 24px;
+    padding: 0px 10px 0px 10px;
+    color: #243a48;
+    font-size: 12px;
+    margin-left: -40px;
+    line-height: 2;
+}
+.odd-li-left {
+	width: 20%
+	
+}
+.max-li-center {
+	
+	    width: 35%;
+    text-align: right;
+}
+
+.mat-li-right {
+	width: 35%;
+	text-align: right;
+}
+
+.match_odds .center-m .match-white .odds .mat-li {
+    font-size: 12px;
+    padding-right: 10px;
+    line-height: 2;
+}
+
+.match_odds .center-m .match-white .odds .mat-li span {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.match_odds .center-m .match-white .odds .mat-li a {
+    background: #f40c0c;
+    color: #fff;
+    padding: 4px;
+    margin-left: 7px;
+}
+
+.match_odds .center-m .bookmaker {
+    display: flex;
+    justify-content: space-between;
+    background: #243a48;
+    color: #fff;
+    padding: 5px 16px 5px 9px;
+    margin-top: 25px;
+}
+
+.match_odds .center-m .bookmaker h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: unset;
+}
+
+.match_odds .center-m .bookmaker h3 i.fas.fa-thumbtack {
+    color: #aab5bc;
+    font-size: 13px;
+    padding-right: 7px;
+}
+
+.match_odds .center-m .bookmaker h3 span {
+    color: #aab5bc;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.match_odds .center-m .bookmaker h3 span::before {
+    content: '|';
+    padding-left: 6px;
+    padding-right: 3px;
+}
+
+.match_odds .center-m .bookmaker p {
+    color: #fff;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: unset;
+}
+
+.match_odds .center-m .bookmaker p span {
+    background: #bed5d8;
+    color: #000;
+    padding: 0 20px 0 20px;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.match_odds table .back-gradient {
+    background-image: linear-gradient( 90deg, rgba(130, 183, 221, 0.15) 0%, rgba(130, 183, 221, 0.8) 65%);
+}
+
+.match_odds table .lay-gradient {
+    background-image: linear-gradient( 270deg, rgba(231, 170, 184, 0.15) 5%, rgba(231, 170, 184, 0.8) 60%);
+}
+
+.match_odds table tr .back {
+    padding: unset;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.match_odds table tr .lay {
+    padding: unset;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.match_odds table .back-gradient dl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    line-height: 3;
+}
+
+.match_odds table .lay-gradient dl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    line-height: 3;
+}
+
+.match_odds table tr td {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 600;
+        vertical-align: middle;
+    
+}
+
+.match_odds table .back-gradient dl .back1 {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 0px 25px 0 25px;
+    height: 38px;
+    margin-bottom: 0;
+}
+
+.match_odds table .lay-gradient dl .back2 {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 0px 25px 0 25px;
+    height: 38px;
+    margin-bottom: 0;
+}
+
+.match_odds table .lay-gradient dl dd {
+    margin-bottom: 0;
+}
+
+.match_odds table .back-gradient dl dd {
+    margin-bottom: 0;
+}
+
+.match_odds .pre-cri {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.over-wrap .fancy_bet, .over-wrap .sportsbook_bet, .over-wrap .bookmaker_bet {
+    margin: 48px 0 40px;
+}
+
+.fancy_bet, .sportsbook_bet, .bookmaker_bet {
+    box-shadow: 0 2px 0 rgb(0 0 0 / 10%);
+}
+
+.sportsbook-head {
+    border-bottom-color: #F26D1C;
+}
+
+.fancy-head, .sportsbook-head, .bookmaker {
+    width: 100%;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+
+
+.btn-fancybet_rules, .btn-sportsbook_rules {
+    vertical-align: top;
+    margin-left: -4px;
+    background-position: -377px -1395px;
+    height: 25px;
+    width: 37px;
+}
+
+.other-tab {
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    background-repeat: repeat-x;
+    color: #C5D0D7;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-left: 7px;
+    z-index: 0;
+    background-position: 0 -11266px;
+    margin-top: 7px;
+    text-decoration: none;
+}
+.other-tab:hover {
+	color: #C5D0D7
+}
+
+.other-tab:before, .other-tab:after {
+    content: '';
+    position: absolute;
+}
+.other-tab:before {
+    left: -11px;
+    background-position: -403px -656px;
+    height: 25px;
+    width: 11px;
+}
+.other-tab:after {
+    right: -11px;
+    background-position: -403px -681px;
+    height: 25px;
+    width: 11px;
+	top: 0;
+}
+ 
+.sportsbook-head .rules-wrap {
+    border-radius: 8px;
+    margin-top: 0;
+}
+
+.rules-wrap:not(:target) {
+    display: none;
+}
+
+.rules-wrap {
+    position: absolute;
+    left: 50%;
+    width: 460px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    margin-left: -230px;
+    z-index: 10;
+}
+
+.sportsbook-head .rules-wrap h3 {
+    border-radius: 8px 8px 0 0;
+}
+
+.rules-wrap h3 {
+    height: 40px;
+    line-height: 40px;
+    background-color: #eee;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sportsbook-head .rules-wrap .rules-content {
+    height: auto;
+    padding: 0;
+}
+
+.rules-wrap .rules-content {
+    height: 340px;
+    padding: 8px 15px;
+    line-height: 18px;
+    color: rgba(36, 58, 72, 0.9);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.download-list {
+    justify-content: space-between;
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #ccc;
+}
+
+.download-list dt {
+    flex: 1;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.download-list dt a {
+    text-decoration: none;
+    color: #2789ce;
+    outline: none;
+  
+}
+
+.download-list dd {
+    flex: 0 0 50px;
+}
+
+.download-list dd a {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 10px;
+    border-left: 1px solid #ccc;
+}
+
+.download-list:last-child {
+    border-bottom: none;
+}
+
+.download-list {
+    justify-content: space-between;
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #ccc;
+}
+
+.download-list dt {
+    flex: 1;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.rules-wrap ol {
+    margin: 0 0 10px 20px;
+}
+
+.rules-wrap ol li {
+    margin-bottom: 5px;
+}
+
+.rules-wrap .btn-wrap {
+    border-top: 1px solid #ccc;
+    padding: 8px 0 0;
+}
+
+    /* .btn-wrap {
+        margin-bottom: 7px;
+    } */
+
+.rules-wrap .btn-wrap li {
+    width: 100%;
+}
+
+.fancy-info {
+    line-height: 15px;
+}
+
+.fancy-info dt {
+    color: #7E97A7;
+    margin-right: 2px;
+}
+
+.fancy-info dt span {
+    width: 56px;
+    background-color: #BED5D8;
+    border-radius: 3px;
+    color: #3b5160;
+    font-size: 11px;
+}
+
+.fancy-info dd {
+    margin-right: 8px;
+}
+
+.fancy-info dd:last-of-type {
+    margin-right: 0;
+}
+
+.fancy-info:last-of-type {
+    margin-right: 0;
+}
+
+.fancy-info dt span {
+    width: 56px;
+    background-color: #BED5D8;
+    border-radius: 3px;
+    color: #3b5160;
+    font-size: 11px;
+}
+
+.fancy-info dd {
+    margin-right: 8px;
+}
+
+.special_bets-tab-wrap, .fancy_bet_tab-wrap {
+    background-image: linear-gradient( 180deg, #F26D1C 15%, #D14100 100%);
+    box-shadow: inset 0 1px 0 0 rgb(0 0 0 / 20%);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.special_bets-tab {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin: 1px 0 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    /* height: 21px;
+    width: 57%;
+    margin-left: 23%; */
+}
+
+.special_bets-tab li {
+    list-style: none;
+    padding: 2px 7px;
+    /* float: left; */
+    font-size: 12px;
+}
+
+.special_bets-tab a {
+    min-width: 70px;
+    height: 18px;
+    line-height: 15px;
+    color: rgba(163, 64, 5, 0.85);
+    font-weight: bold;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.more_drop-list:not(:target) {
+    display: none;
+}
+
+.more_drop-list {
+    position: absolute;
+    min-width: 115px;
+    border-radius: 0;
+    line-height: 28px;
+}
+
+.special_bets-tab .more_drop-list li {
+    padding: 0;
+}
+
+.more_drop-list li {
+    float: none;
+}
+
+.special_bets-tab .more_drop-list a {
+    min-width: 100%;
+    height: 28px;
+    line-height: 28px;
+    color: #243A48;
+    font-weight: normal;
+    border-radius: 0;
+    padding: 0 10px;
+}
+
+.more_drop-list a {
+    width: calc(100% - 20px);
+    border-right-width: 0;
+    text-align: left;
+}
+
+.more_drop-list li:last-of-type a {
+    border-bottom-color: #7e97a7;
+}
+
+.sportsbook_bet .bets, .sportsbook_bet .bets-HS, .sportsbook_bet .bets-GH {
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 10%);
+}
+.bets, .bets-HS, .bets-GH {
+    width: 100%;
+    margin-top: -24px;
+}
+
+.fancy_bet .bets, .sportsbook_bet .bets, .bookmaker_bet .bets, .fancy_bet .bets-HS, .sportsbook_bet .bets-HS, .bookmaker_bet .bets-HS, .fancy_bet .bets-GH, .sportsbook_bet .bets-GH, .bookmaker_bet .bets-GH {
+    table-layout: fixed;
+    margin-top: 0;
+}
+
+
+
+.bets td, .bets-HS td, .bets-GH td {
+    width: 8.97436%;
+    border-bottom: 1px solid #7e97a7;
+    border-left: 1px solid #ddd;
+    font-weight: bold;
+    /* vertical-align: top; */
+}
+.bets .colgroup-adjust td, .bets-HS .colgroup-adjust td, .bets-GH .colgroup-adjust td {
+    border-bottom: inherit;
+    border-left: inherit;
+}
+
+
+
+.bets .special_bet, .bets-HS .special_bet, .bets-GH .special_bet {
+    background-color: #243A48;
+    color: #fff;
+}
+
+.bets .special_bet td, .bets-HS .special_bet td, .bets-GH .special_bet td {
+    padding: 0;
+    border-left-width: 0;
+    border-bottom-color: #fff;
+    line-height: 25px;
+}
+
+.bets .special_bet h3, .bets-HS .special_bet h3, .bets-GH .special_bet h3 {
+    position: relative;
+    padding: 0 0 0 10px;
+    font-size: 14px;
+    padding-top: 5px;
+
+}
+
+.bets .special_bet h3 a, .bets-HS .special_bet h3 a, .bets-GH .special_bet h3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bets .special_bet a, .bets-HS .special_bet a, .bets-GH .special_bet a {
+    height: inherit;
+    padding: 0;
+}
+
+.fancy_bet .fancy-suspend-tr th, .sportsbook_bet .fancy-suspend-tr th, .bookmaker_bet .fancy-suspend-tr th, .fancy_bet .fancy-suspend-tr td, .sportsbook_bet .fancy-suspend-tr td, .bookmaker_bet .fancy-suspend-tr td {
+    position: relative;
+    height: 0;
+    border-width: 0;
+    margin-bottom: -1px;
+    padding: 0;
+}
+.pop-warp .game-name p, .log-wrap .game-name p, .streaming-pop .game-name p, .menu-list a, .path-pop a, .short-amount, .upcome, .live-list a, .live-channel, .game-list-col dt, .game-list-col.predict p, .tab-HS a, .bets th, .bets-HS th, .bets-GH th, .bets th p, .bets-HS th p, .bets-GH th p, .horse-name li, .game-wrap h3 .multi_name, .quick_bet-wrap dt, .quick_bet-wrap .btn span, .quick_bet-wrap .btn-send span, .quick_bet-wrap .nova88exch .total_all .search-but span, .nova88exch .total_all .quick_bet-wrap .search-but span, .quick_bet-wrap .pages a span, .pages .quick_bet-wrap a span, .quick_bet-wrap .calendarTable_inputBox input span, .calendarTable_inputBox .quick_bet-wrap input span, .quick_bet-wrap .calendarTable_inputBox textarea span, .calendarTable_inputBox .quick_bet-wrap textarea span, .fancy-th-layout dt, .fancy-th-layout dd, .suggestion-wrap .no-matching, .suggestion-wrap p, .suggestion-wrap a, .filter-list .filter-content, .select-betting .selection, .on_live dd p, .entrance-title dt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bets th, .bets-HS th, .bets-GH th {
+    position: relative;
+    padding: 9px 10px;
+    border-bottom: 1px solid #7e97a7;
+    /* background-color: #fff; */
+}
+
+.fancy-suspend-white {
+    box-sizing: border-box;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #d0021b;
+}
+
+.fancy-suspend, .fancy-suspend-white {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(36, 58, 72, 0.4);
+    z-index: 5;
+}
+
+.fancy_bet .fancy-suspend-tr span, .sportsbook_bet .fancy-suspend-tr span, .bookmaker_bet .fancy-suspend-tr span {
+    font-size: 12px;
+}
+
+.slip-back dt span, .slip-lay dt span, .slip-book dt span {
+    color: #222;
+    opacity: 0.5;
+    font-weight: normal;
+}
+.bets td span, .bets-HS td span, .bets-GH td span {
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.bets th, .bets-HS th, .bets-GH th {
+    position: relative;
+    padding: 9px 10px;
+    border-bottom: 1px solid #7e97a7;
+}
+
+.fancy_bet .bets th, .sportsbook_bet .bets th, .bookmaker_bet .bets th, .fancy_bet .bets-HS th, .sportsbook_bet .bets-HS th, .bookmaker_bet .bets-HS th, .fancy_bet .bets-GH th, .sportsbook_bet .bets-GH th, .bookmaker_bet .bets-GH th {
+    /* padding: 4px 5px 3px 10px; */
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 46px
+}
+
+.fancy-th-layout {
+    width: 100%;
+    height: 22px;
+}
+.fancy-th-layout dt, .fancy-th-layout dd {
+    align-items: center;
+}
+.fancy-th-layout dt {
+    flex: 1;
+    /* margin-right: 5px; */
+    flex-wrap: wrap;
+}
+ .bets th p, .bets-HS th p, .bets-GH th p {
+    width: 292px;
+    margin-bottom: 0;
+}
+ .bets th .fancy-th-layout p, .bets-HS th .fancy-th-layout p, .bets-GH th .fancy-th-layout p {
+    width: 100%;
+}
+ .win, .to-win {
+    color: #508d0e;
+    margin: 0 5px 0 0;
+}
+.lose, .to-lose {
+    color: #d0021b;
+    margin: 0 5px 0 0;
+}
+.to-win {
+    display: inline-flex;
+    align-items: center;
+}
+.to-lose {
+    display: inline-flex;
+    align-items: center;
+}
+.bets th span, .bets-HS th span, .bets-GH th span {
+    font-weight: normal;
+}
+
+.to-win:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    background-image: url('data:image/svg+xml,<svg width="10" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M4 0l6 5-6 5V7H0V3h4V0z" fill="%234F8C0C" fill-rule="evenodd"/></svg>');
+}
+
+.to-lose:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    background-image: url('data:image/svg+xml,<svg width="10" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M4 0l6 5-6 5V7H0V3h4V0z" fill="%23D0021B" fill-rule="evenodd"/></svg>');
+}
+
+.sportsbook_bet .bets .back-1, .sportsbook_bet .bets-HS .back-1, .sportsbook_bet .bets-GH .back-1 {
+    background-color: #72E3A0;
+}
+.sportsbook_bet .bets .back-1.select, .sportsbook_bet .bets-HS .back-1.select, .sportsbook_bet .bets-GH .back-1.select {
+    background-color: #16A660;
+}
+
+.bets .back-1, .bets-HS .back-1, .bets-GH .back-1 {
+    background-color: #72bbef;
+    border-left-color: #fff;
+}
+.bets .back-1.select, .bets-HS .back-1.select, .bets-GH .back-1.select {
+    background-color: #1a8ee1;
+    color: #fff;
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 50%);
+}
+
+.bets td.no-liq a, .bets-HS td.no-liq a, .bets-GH td.no-liq a {
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bets td a, .bets-HS td a, .bets-GH td a {
+    position: relative;
+    height: 50px;
+    line-height: 20px;
+    color: #1e1e1e;
+    padding: 3px 0 2px;
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+        justify-items: center;
+        align-items: center;
+    
+}
+
+.bets .refer-bet, .bets-HS .refer-bet, .bets-GH .refer-bet, .bets .refer-book, .bets-HS .refer-book, .bets-GH .refer-book {
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+
+
+
+
+.sportsbook_bet .bets:last-of-type, .sportsbook_bet .bets-HS:last-of-type, .sportsbook_bet .bets-GH:last-of-type {
+    box-shadow: none;
+}
+
+
+.slip-lay {
+    background-color: #f3dce2;
+    border-bottom: 1px solid #dfa3b3;
+    
+}
+
+dl {
+	margin-bottom: 0;
+}
+.quick_bet-wrap {
+    border: 1px solid #7E97A7;
+    border-width: 1px 0 1px 0;
+    box-shadow: inset 0 2px 0 rgb(0 0 0 / 10%);
+    padding: 0 2px 0 7px;
+}
+.fancy_bet .fancy-quick-tr .quick_bet-wrap, .sportsbook_bet .fancy-quick-tr .quick_bet-wrap, .bookmaker_bet .fancy-quick-tr .quick_bet-wrap {
+    border-width: 0;
+}
+
+
+
+.slip-book {
+    background-color: #d3edd0;
+    border-bottom: 1px solid #9fd899;
+}
+
+.slip-back dt, .slip-lay dt, .slip-book dt {
+    position: relative;
+    width: 43%;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.quick_bet-wrap dt, .quick_bet-wrap dd {
+    box-sizing: border-box;
+}
+.quick_bet-wrap dt {
+    width: 53.79665%;
+    height: auto;
+    line-height: 22px;
+    padding: 0px;
+    text-align: right;
+}
+
+.slip-back dt {
+	float:left
+}
+
+
+
+.sportsbook_bet .fancy-quick-tr dt span {
+    display: inline-block;
+}
+
+.quick_bet-wrap dt .bet-check {
+    font-size: 12px;
+    opacity: 1;
+    line-height: 31px;
+    padding-right: 6px;
+}
+
+.quick_bet-wrap input, .quick_bet-wrap textarea {
+    line-height: 33px;
+    height: 33px;
+}
+
+.slip-back input, .slip-lay input, .slip-book input, .slip-back textarea, .slip-lay textarea, .slip-book textarea {
+    margin: 0;
+    padding: 0 6px 0 0;
+    width: 100%;
+    line-height: 22px;
+}
+
+.quick_bet-wrap .max-bet {
+    margin-right: 15px;
+    opacity: 1;
+}
+
+
+.btn, .btn-send, .nova88exch .total_all .search-but, .marquee-pop .pages a, .pages a, .calendarTable_inputBox input, .calendarTable_inputBox textarea {
+    background: #eee url("/desktopfile/img/bg-btn.gif") repeat-x;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #1e1e1e;
+    font-weight: bold;
+    line-height: 23px;
+    font-size: 12px;
+    margin: 0 5px 10px 0;
+}
+
+.bets td a, .bets-HS td a, .bets-GH td a {
+    position: relative;
+    height: 50px;
+    color: #1e1e1e;
+    padding: 3px 0 2px;
+    cursor: pointer;
+}
+
+
+
+.quick_bet-wrap .btn, .quick_bet-wrap .btn-send, .quick_bet-wrap .nova88exch .total_all .search-but, .nova88exch .total_all .quick_bet-wrap .search-but, .quick_bet-wrap .pages a, .pages .quick_bet-wrap a, .quick_bet-wrap .calendarTable_inputBox input, .calendarTable_inputBox .quick_bet-wrap input, .quick_bet-wrap .calendarTable_inputBox textarea, .calendarTable_inputBox .quick_bet-wrap textarea {
+    height: 31px;
+    line-height: 31px;
+    margin: 0;
+}
+
+.slip-back .col-stake_list a, .slip-lay .col-stake_list a, .slip-book .col-stake_list a {
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: normal;
+    margin: 0 5px 0 0;
+}
+.quick_bet-wrap .col-stake_list a {
+    height: auto;
+    line-height: 23px;
+    font-size: 12px;
+}
+.fancy_bet .fancy-quick-tr td a, .sportsbook_bet .fancy-quick-tr td a, .bookmaker_bet .fancy-quick-tr td a {
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.quick_bet-wrap .max-bet a {
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.quick_bet-wrap dd {
+    padding: 0px;
+    margin-bottom: 0;
+}
+
+.quick_bet-wrap .col-btn {
+    width: 9.00901%;
+}
+
+
+
+.slip-back dd, .slip-lay dd, .slip-book dd {
+    position: relative;
+    color: #243a48;
+    padding: 0px 2px;
+    line-height: 22px;
+    
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.slip-back .col-odd, .slip-lay .col-odd, .slip-book .col-odd {
+    width: 14.12429%;
+}
+.quick_bet-wrap .col-odd {
+    width: 8.36551%;
+}
+
+.quick-bet-confirm {
+    width: 100%;
+    height: 33px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quick-bet-confirm li {
+    width: calc(100% - 10px);
+    list-style: none;
+    line-height: 18px;
+    color: #1e1e1e;
+    padding: 0 5px;
+}
+
+.quick-bet-confirm .quick-bet-confirm-title {
+    font-size: 10px;
+    line-height: 12px;
+    color: #222;
+    opacity: 0.5;
+}
+
+.quick_bet-wrap .col-stake {
+    width: 10.29601%;
+    padding-left: 0;
+}
+
+.slip-back .col-stake, .slip-lay .col-stake, .slip-book .col-stake {
+    width: 15.53672%;
+    padding-left: 5px;
+}
+
+.quick_bet-wrap .col-send {
+    width: 18.01802%;
+}
+
+.skyexchange .btn-send {
+    background: #121212 url(/desktopfile/img/bg-send-skyEX.png) repeat-x;
+    color: #F8D61C;
+    border-color: #000;
+}
+
+.quick_bet-progress .progress-bar {
+    width: auto;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    background: #C2D5E4;
+    border-radius: 0;
+    box-shadow: inset 0 2px 0 rgb(0 0 0 / 10%);
+    transition: width 0.4s ease;
+}
+
+.quick_bet-progress .progress-bar-txt {
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    color: #3B5160;
+    line-height: 30px;
+    padding: 0;
+}
+
+.quick_bet-message dd {
+    width: 100%;
+    padding: 0;
+    line-height: 30px;
+}
+
+.quick_bet-message strong {
+    padding-right: 5px;
+}
+
+.fancy_bet .fancy-quick-tr td .btn-close, .sportsbook_bet .fancy-quick-tr td .btn-close, .bookmaker_bet .fancy-quick-tr td .btn-close {
+    height: 10px;
+}
+
+i.fas.fa-minus {
+    float: right;
+    font-size: 7px;
+    border: 1px solid #fff;
+    padding: 1px 1px 0px 1px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.bets .special_bet h3, .bets-HS .special_bet h3, .bets-GH .special_bet h3 i.fas.fa-thumbtack {
+    color: #aab5bc;
+    font-size: 13px;
+    padding-right: 7px;
+}
+
+.match_odds .left-top a span {
+    left: 185px;
+}
+/* .match_odds .left-top a p {
+    left: 8px;
+} */
+
+
+
+.match_odds table tr td {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.match_odds table tr td p{
+    margin-bottom: 0 !important;
+}
+.match_odds .quick_bet-wrap {
+    border: 1px solid #7E97A7;
+    border-width: 1px 0 1px 0;
+    box-shadow: inset 0 2px 0 rgb(0 0 0 / 10%);
+    padding: 7px 2px 0 7px;
+    margin-bottom: 0;
+}
+.match_odds .flex-match {
+    display: flex;
+    justify-content: right;
+}
+.match_odds .flex-match .acc-odds {
+    padding: 0;
+    margin: 0;
+    width: 15%;
+}
+.match_odds .flex-match .acc-odds span {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+    align-items: center;
+}
+.match_odds .flex-match .acc-odds span input {
+    width: 12px;
+    /* margin-top: -10px; */
+}
+.match_odds .flex-match .col-btn {
+    width: 9.00901%;
+    margin: 7px 0 0 0;
+    padding: 0;
+}
+.match_odds .flex-match .col-btn a {
+    cursor: pointer;
+    padding: 10px 13px 0 13px;
+    margin: 0;
+}
+.match_odds .flex-match .col-odd {
+    padding: 0;
+    margin: 7px 0 0 0;
+    width: 8.36551%;
+}
+.match_odds .flex-match .col-odd ul {
+    padding: 0 0 0 33px;
+}
+.match_odds .quick-bet-confirm {
+    width: 100%;
+    height: 33px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.5);
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+.match_odds .flex-match .col-stake {
+    padding: 0 4px 0 5px;
+    margin: 7px 0px 0px 0px;
+    width: 10%;
+}
+.match_odds .flex-match .col-stake input {
+    border-radius: 4px;
+    border: none;
+    padding: 0;
+}
+.match_odds .flex-match .col-send {
+    margin: 14px 0 0 0px;
+    padding: 0;
+    width: 18%;
+}
+.match_odds .flex-match .col-send a {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 40px 10px 40px;
+}
+.match_odds .quick_bet-wrap .col-stake_list {
+    width: calc(100% + 7px + 2px);
+    padding: 5px 0;
+    margin-left: -7px;
+    display: flex;
+    justify-content: right;
+}
+.match_odds .slip-lay .col-stake_list {
+    border-top: 1px solid #e6b8c4;
+    background-color: #faeff2;
+    margin-bottom: 0;
+}
+.match_odds .slip-back .col-stake_list ul, .slip-lay .col-stake_list ul, .slip-book .col-stake_list ul {
+    padding-left: 5px;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+}
+.match_odds .quick_bet-wrap .col-stake_list a {
+    height: auto;
+    line-height: 23px;
+    font-size: 12px;
+    padding: 0 40px 0 40px;
+}
+.suspend-div{
+    position: relative;
+    background: #7190a0d4;
+    width: 28rem;
+    left: 23.5rem;
+    height: 3.5rem;
+    top: 4.8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: -3.5rem;
+}
+/* .fancy-suspend-td{
+    min-width: 1350px;
+} */
+
+.bets td, .bets-HS td, .bets-GH td {
+    width: 8.97436%;
+    border-bottom: 1px solid #7e97a7;
+    border-left: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: top;
+}
+.bets-bookmaker td {
+    border-left: none;
+}
+
+.fancy-suspend-tr td {
+    position: relative;
+    height: 0;
+    border-width: 0;
+    margin-bottom: -1px;
+    padding: 0;
+}
+
+.fancy-suspend, .fancy-suspend-white {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(36,58,72,0.4);
+    z-index: 5;
+}
+
+.fancy-suspend, .fancy-suspend-white {
+    height: 46px;
+}
+
+.bets-bookmaker .fancy-suspend, .bets-bookmaker .fancy-suspend-white, .bets-bookmaker .fancy-suspend-white {
+    height: 46px;
+}
+
+th p {
+	text-align: left;
+}
+
+.bets-wrap {
+    position: relative;
+    background-color: #fff;
+    border-top: 1px solid #7e97a7;
+    margin-top: 38px;
+    margin-bottom: 30px;
+}
+.over-wrap .bets-wrap {
+    margin-top: 23px;
+}
+.bets-wrap {
+    margin-top: 38px;
+}
+
+.bg-sprite, .slip-wrap h3, .matched-wrap h3, .live-wrap h3, .tv-wrap h3, .game-wrap h3, .game-highlight-wrap h3, .game-wrap-horse h3, .favor-wrap h3, .sub_path h3, .one_click, .one_click.select, .path, .slider-bar, .slider-bar span, .upcome-head, .tab-highlight, .tab-markets, .live-head h3, .live-channel, .change-channel, .game-wrap-horse dt .game-list-place, .progress-bar, .progress-now, .scores-event, .scores-line, .tab-HS, .bets .back-all img, .bets-HS .back-all img, .bets-GH .back-all img, .bets .back-all:hover img, .bets-HS .back-all:hover img, .bets-GH .back-all:hover img, .bets .lay-all img, .bets-HS .lay-all img, .bets-GH .lay-all img, .bets .lay-all:hover img, .bets-HS .lay-all:hover img, .bets-GH .lay-all:hover img, .bets.disable .back-all img, .disable.bets-HS .back-all img, .disable.bets-GH .back-all img, .bets.disable .lay-all img, .disable.bets-HS .lay-all img, .disable.bets-GH .lay-all img, .line_markets-team, .line_markets-team .game-vs div, .line_market-name span,  .fancy-head h4 span, .fancy-head .tc-content h5 span, .tc-content .fancy-head h5 span, .other-tab, .sportsbook-head h4 span, .sportsbook-head .tc-content h5 span, .tc-content .sportsbook-head h5 span, .o_12bet .path, .o_12bet .slip-wrap h3, .o_12bet .matched-wrap h3, .o_12bet .slider-bar span, .o_12bet .upcome-head, .o_12bet .tab-highlight, .o_12bet .tab-markets, .o_12bet .one_click-setting, .mazaplay .tab-highlight, .mazaplay .tab-markets, .mazaplay .one_click-setting, .mysports247 .path, .mysports247 .tab-highlight, .mysports247 .tab-markets, .mysports247 .one_click-setting, .skyexchange .one_click-setting, .o_spondemo .path, .o_spondemo .slip-wrap h3, .o_spondemo .matched-wrap h3, .o_spondemo .slider-bar span, .o_spondemo .upcome-head, .o_spondemo .one_click-setting, .skyinplay .path, .skyinplay .tab-highlight, .skyinplay .tab-markets, .skyinplay .one_click-setting, .bigexch .path, .bigexch .tab-highlight, .bigexch .tab-markets, .bigexch .one_click-setting, .masterexchange .path, .masterexchange .tab-highlight, .masterexchange .tab-markets, .masterexchange .one_click-setting, .matador .tab-highlight, .matador .tab-markets, .matador .one_click-setting, .fairenter .path, .fairenter .tab-highlight, .fairenter .tab-markets, .fairenter .one_click-setting, .lucky7 .path, .lucky7 .tab-highlight, .lucky7 .tab-markets, .lucky7 .one_click-setting, .qexch .path, .qexch .tab-highlight, .qexch .tab-markets, .qexch .one_click-setting, .betmygame .path, .betmygame .tab-highlight, .betmygame .tab-markets, .betmygame .one_click-setting, .fancyfair .one_click, .fancyfair .one_click.select, .fancyfair .path, .fancyfair .tab-highlight, .fancyfair .tab-markets, .fancyfair .one_click-setting, .maruti .tab-highlight, .maruti .tab-markets, .maruti .one_click-setting, .marutibook .one_click, .marutibook .one_click.select, .marutibook .tab-highlight, .marutibook .tab-markets, .marutibook .one_click-setting, .skyexchange247 .one_click-setting, .oceanexch1 .path, .oceanexch1 .tab-highlight, .oceanexch1 .tab-markets, .oceanbook1 .path, .oceanbook1 .tab-highlight, .oceanbook1 .tab-markets, .probetx .path, .probetx .tab-highlight, .probetx .tab-markets, .probetx .one_click-setting, .alphaexch .tab-highlight, .alphaexch .tab-markets, .alphaexch .one_click-setting, .alphaexchlive .tab-highlight, .alphaexchlive .tab-markets, .alphaexchlive .one_click-setting, .maxexch9 .path, .maxexch9 .tab-highlight, .maxexch9 .tab-markets, .maxexch9 .one_click-setting, .cftbet365 .one_click, .cftbet365 .one_click.select, .cftbet365 .tab-highlight, .cftbet365 .tab-markets, .cftbet365 .one_click-setting, .crickzoom .path, .crickzoom .tab-highlight, .crickzoom .tab-markets, .crickzoom .one_click-setting, .crickzoomlive .path, .crickzoomlive .tab-highlight, .crickzoomlive .tab-markets, .crickzoomlive .one_click-setting, .maxinplay .path, .maxinplay .tab-highlight, .maxinplay .tab-markets, .maxinplay .one_click-setting, .betbarter .path, .betbarter .slip-wrap h3, .betbarter .matched-wrap h3, .betbarter .slider-bar span, .betbarter .upcome-head, .betbarter .tab-highlight, .betbarter .tab-markets, .betbarter .one_click-setting, .probet247 .path, .probet247 .tab-highlight, .probet247 .tab-markets, .probet247 .one_click-setting, .kingfair24 .tab-highlight, .kingfair24 .tab-markets, .kingfair24 .one_click-setting, .sgexch247 .path, .sgexch247 .tab-highlight, .sgexch247 .tab-markets, .sgexch247 .one_click-setting, .sixball .path, .sixball .tab-highlight, .sixball .tab-markets, .sixball .one_click-setting, .sixballio .path, .sixballio .tab-highlight, .sixballio .tab-markets, .sixballio .one_click-setting, .wickets247 .one_click-setting, .crickex .tab-highlight, .crickex .tab-markets, .crickex .one_click, .crickex .one_click.select, .crickex .one_click-setting, .iceEX .one_click, .iceinplay .path, .iceinplay .tab-highlight, .iceinplay .tab-markets, .iceinplay .one_click-setting, .baji .one_click-setting, .baji365 .one_click-setting, .sportsexchlive .one_click-setting, .dafabet .tab-highlight, .dafabet .tab-markets, .dafabet .one_click-setting, .sharet365 .one_click-setting, .baazi365 .one_click-setting, .goexch365 .one_click, .goexch365 .one_click-setting, .sevenexch .path, .sevenexch .one_click-setting, .oxyinplay .one_click-setting, .cricfair .tab-highlight, .cricfair .tab-markets, .cricfair .one_click, .cricfair .one_click.select, .cricfair .one_click-setting, .khelexch .one_click-setting, .lionexch .one_click-setting, .hmsbet .path, .hmsbet .tab-highlight, .hmsbet .tab-markets, .hmsbet .one_click-setting, .jeetbuzz .one_click-setting, .skyfair .one_click-setting, .skyexchange247com .one_click-setting, .mcwex .one_click-setting, .enterfair .path, .enterfair .one_click-setting {
+    background-image: url("../img/main-s4adb34bbf8.png");
+    background-repeat: no-repeat;
+}
+
+.disabled td a {
+    cursor: not-allowed;
+    background: rgba(51,51,51,0.2) url("../img/bg-disabled.png");
+    display: grid;
+    justify-content: center;
+}
+.main-sprite, .btn-close, .icon-time, .icon-live, .icon-irun, .icon-predict, .icon-cashout, .icon-in_play, .icon-no_play, .icon-cricket, .icon-soccer, .icon-tennis, .icon-basketball, .icon-dog, .icon-HR, .icon-racing, .game-wrap .to-expand, .game-highlight-wrap .to-expand, .game-wrap-horse .to-expand, .close.game-wrap .to-expand, .close.game-highlight-wrap .to-expand, .close.game-wrap-horse .to-expand, .o_spondemo .game-wrap .to-expand, .o_spondemo .game-highlight-wrap .to-expand, .o_spondemo .game-wrap-horse .to-expand, .o_spondemo .close.game-wrap .to-expand, .o_spondemo .close.game-highlight-wrap .to-expand, .o_spondemo .close.game-wrap-horse .to-expand, .in-play.game-fancy:before, .in-play.game-sportsbook:before, .in-play.game-bookmaker:before, .in-play.game-live:before, .fancy-head .in-play span:before, .sportsbook-head .in-play span:before, .bookmaker .in-play span:before, .favor, .favor.select, .upcome-head dt, .tab-highlight a, .tab-markets a, .tab-highlight a.select, .tab-markets a.select, .transfer-wrap .close, .transfer-wrap-slider .close, .login_to_go .close, .live-list a:after, .icon-TV_head, .marquee-box h4:before, .marquee-box .tc-content h5:before, .tc-content .marquee-box h5:before,  .marquee-box .tc-content h5:after, .tc-content .marquee-box h5:after, .game-list-col dd .info, .game-list-col .col-visit, .game-list-col .col-home, .game-list-col .col-draw, .game-head .favor, .game-head .favor.select, .game-head .refresh, .game-team .game-visit span, .game-scores .game-visit span, .game-team .game-home span, .game-scores .game-home span, .game-scores ul .scores-box, .its_turn, .icon-card-yellow, .icon-card-red, .score-pop:before, .score-pop-last:before, .scores-event img, .scores-line img, .match-odds img, .tab-HS .more_drop, .tab-HS .more_drop.select, .open-tv-wrap:before, .bets .back-all, .bets-HS .back-all, .bets-GH .back-all, .bets .lay-all, .bets-HS .lay-all, .bets-GH .lay-all, .bets .special_bet .btn-fancy_info, .bets-HS .special_bet .btn-fancy_info, .bets-GH .special_bet .btn-fancy_info, .bets.disable .back-all, .disable.bets-HS .back-all, .disable.bets-GH .back-all, .bets.disable .lay-all, .disable.bets-HS .lay-all, .disable.bets-GH .lay-all, .bets .to-expand, .bets-HS .to-expand, .bets-GH .to-expand, .bets.close .to-expand, .close.bets-HS .to-expand, .close.bets-GH .to-expand, .disabled .back-all, .disabled .back-all:hover, .disabled .lay-all, .disabled .lay-all:hover, .uniform, .more, .line_markets-team .game-visit span, .line_markets-team .game-home span, .line_markets-team .game-vs div:before, .line_markets-team .game-vs div:after, .btn-rules img, .line_market-name, .add-pin, .delete-pin, .col-info .add-pin, .col-info .delete-pin, h3 .add-pin, h3 .delete-pin, h4 .add-pin, .tc-content h5 .add-pin, h4 .delete-pin, .tc-content h5 .delete-pin, .arrow-dialog, .one_click-setting .a-edit img, .one_click-stake, .quick_bet-wrap .odd-add .up, .quick_bet-wrap .odd-add .down, .quick_bet-wrap .odd-add.disable .up, .quick_bet-wrap .odd-add.disable .down, .edit img, .other-tab:before, .other-tab:after, .btn-fancybet_rules, .btn-sportsbook_rules, .o_12bet .game-wrap .to-expand, .o_12bet .game-wrap.close .to-expand, .o_12bet .tab-highlight a, .o_12bet .tab-markets a, .o_12bet .tab-highlight a.select, .o_12bet .tab-markets a.select, .o_12bet .game-wrap-horse .to-expand, .o_12bet .game-wrap-horse.close .to-expand, .o_12bet .add-pin h3, .o_12bet .delete-pin h3, .o_12bet .one_click-stake, .mazaplay .one_click-setting .a-edit img, .mazaplay .one_click-stake, .mysports247 .one_click-setting .a-edit img, .mysports247 .one_click-stake, .skyexchange .login_to_go .close, .skyexchange .one_click-setting .a-edit img, .skyexchange .one_click-stake, .o_spondemo .tab-highlight, .o_spondemo .tab-markets, .o_spondemo .tab-highlight a, .o_spondemo .tab-markets a, .o_spondemo .tab-highlight a.select, .o_spondemo .tab-markets a.select, .o_spondemo .add-pin h3, .o_spondemo .delete-pin h3, .o_spondemo .one_click-stake, .skyinplay .one_click-setting .a-edit img, .skyinplay .one_click-stake, .bigexch .one_click-setting .a-edit img, .bigexch .one_click-stake, .masterexchange .login_to_go .close, .masterexchange .one_click-setting .a-edit img, .masterexchange .one_click-stake, .matador .one_click-setting .a-edit img, .matador .one_click-stake, .fairenter .one_click-setting .a-edit img, .fairenter .one_click-stake, .lucky7 .one_click-setting .a-edit img, .lucky7 .one_click-stake, .qexch .one_click-setting .a-edit img, .qexch .one_click-stake, .betmygame .one_click-setting .a-edit img, .betmygame .one_click-stake, .fancyfair .one_click-setting .a-edit img, .fancyfair .one_click-stake, .maruti .one_click-setting .a-edit img, .maruti .one_click-stake, .marutibook .one_click-setting .a-edit img, .marutibook .one_click-stake, .skyexchange247 .login_to_go .close, .skyexchange247 .one_click-setting .a-edit img, .skyexchange247 .one_click-stake, .probetx .one_click-setting .a-edit img, .probetx .one_click-stake, .alphaexch .one_click-setting .a-edit img, .alphaexch .one_click-stake, .alphaexchlive .one_click-setting .a-edit img, .alphaexchlive .one_click-stake, .maxexch9 .one_click-setting .a-edit img, .maxexch9 .one_click-stake, .cftbet365 .one_click-setting .a-edit img, .cftbet365 .one_click-stake, .crickzoom .one_click-setting .a-edit img, .crickzoom .one_click-stake, .crickzoomlive .one_click-setting .a-edit img, .crickzoomlive .one_click-stake, .maxinplay .one_click-setting .a-edit img, .maxinplay .one_click-stake, .betbarter .game-wrap .to-expand, .betbarter .game-wrap.close .to-expand, .betbarter .tab-highlight a, .betbarter .tab-markets a, .betbarter .tab-highlight a.select, .betbarter .tab-markets a.select, .betbarter .game-wrap-horse .to-expand, .betbarter .game-wrap-horse.close .to-expand, .betbarter .add-pin h3, .betbarter .delete-pin h3, .betbarter .one_click-stake, .probet247 .one_click-setting .a-edit img, .probet247 .one_click-stake, .kingfair24 .one_click-setting .a-edit img, .kingfair24 .one_click-stake, .sgexch247 .one_click-setting .a-edit img, .sgexch247 .one_click-stake, .sixball .one_click-setting .a-edit img, .sixball .one_click-stake, .sixballio .one_click-setting .a-edit img, .sixballio .one_click-stake, .wickets247 .login_to_go .close, .wickets247 .one_click-setting .a-edit img, .wickets247 .one_click-stake, .crickex .login_to_go .close, .crickex .one_click-setting .a-edit img, .crickex .one_click-stake, .iceEX .login_to_go .close, .iceEX .one_click-setting .a-edit img, .iceEX .one_click-stake, .iceinplay .one_click-setting .a-edit img, .iceinplay .one_click-stake, .dhoom .login_to_go .close, .dhoom .one_click-setting .a-edit img, .dhoom .one_click-stake, .baji .login_to_go .close, .baji .one_click-setting .a-edit img, .baji .one_click-stake, .agexch247 .login_to_go .close, .agexch247 .one_click-setting .a-edit img, .agexch247 .one_click-stake, .baji365 .login_to_go .close, .baji365 .one_click-setting .a-edit img, .baji365 .one_click-stake, .sportsexchlive .login_to_go .close, .sportsexchlive .one_click-setting .a-edit img, .sportsexchlive .one_click-stake, .dafabet .one_click-setting .a-edit img, .dafabet .one_click-stake, .sharet365 .login_to_go .close, .sharet365 .one_click-setting .a-edit img, .sharet365 .one_click-stake, .baazi365 .login_to_go .close, .baazi365 .one_click-setting .a-edit img, .baazi365 .one_click-stake, .goexch365 .login_to_go .close, .goexch365 .one_click-setting .a-edit img, .goexch365 .one_click-stake, .sevenexch .one_click-setting .a-edit img, .sevenexch .one_click-stake, .oxyinplay .login_to_go .close, .oxyinplay .one_click-setting .a-edit img, .oxyinplay .one_click-stake, .cricfair .login_to_go .close, .cricfair .one_click-setting .a-edit img, .cricfair .one_click-stake, .khelexch .one_click-setting .a-edit img, .khelexch .one_click-stake, .lionexch .login_to_go .close, .lionexch .one_click-setting .a-edit img, .lionexch .one_click-stake, .hmsbet .one_click-setting .a-edit img, .hmsbet .one_click-stake, .regalexch365 .login_to_go .close, .regalexch365 .one_click-setting .a-edit img, .regalexch365 .one_click-stake, .jeetbuzz .login_to_go .close, .jeetbuzz .one_click-setting .a-edit img, .jeetbuzz .one_click-stake, .skyfair .login_to_go .close, .skyfair .one_click-setting .a-edit img, .skyfair .one_click-stake, .skyexchange247com .login_to_go .close, .skyexchange247com .one_click-setting .a-edit img, .skyexchange247com .one_click-stake, .mcwex .login_to_go .close, .mcwex .one_click-setting .a-edit img, .mcwex .one_click-stake, .enterfair .one_click-setting .a-edit img, .enterfair .one_click-stake, .suninplay .login_to_go .close, .suninplay .one_click-setting .a-edit img, .suninplay .one_click-stake, .nova88exch .login_to_go .close, .nova88exch .one_click-setting .a-edit img, .nova88exch .one_click-stake, .betbhai247 .login_to_go .close, .betbhai247 .one_click-setting .a-edit img, .betbhai247 .one_click-stake, .srexch .login_to_go .close, .srexch .one_click-setting .a-edit img, .srexch .one_click-stake, .sixballcric .login_to_go .close, .sixballcric .one_click-setting .a-edit img, .sixballcric .one_click-stake, .dollarexc .login_to_go .close, .dollarexc .one_click-setting .a-edit img, .dollarexc .one_click-stake, .smash .one_click-setting .a-edit img, .smash .one_click-stake, .jua247 .login_to_go .close, .jua247 .one_click-setting .a-edit img, .jua247 .one_click-stake, .shambhu9 .login_to_go .close, .shambhu9 .one_click-setting .a-edit img, .shambhu9 .one_click-stake {
+    background-image: url("/desktopfile/img/main-s4adb34bbf8.png");
+    background-repeat: no-repeat;
+}
+.bg-sprite, .slip-wrap h3, .matched-wrap h3, .live-wrap h3, .tv-wrap h3, .game-wrap h3, .game-highlight-wrap h3, .game-wrap-horse h3, .favor-wrap h3, .sub_path h3, .one_click.select, .path, .slider-bar, .slider-bar span, .upcome-head, .tab-highlight, .tab-markets, .live-head h3, .live-channel, .change-channel, .game-wrap-horse dt .game-list-place, .progress-bar, .progress-now, .scores-event, .scores-line, .tab-HS, .bets .back-all img, .bets-HS .back-all img, .bets-GH .back-all img, .bets .back-all:hover img, .bets-HS .back-all:hover img, .bets-GH .back-all:hover img, .bets .lay-all img, .bets-HS .lay-all img, .bets-GH .lay-all img, .bets .lay-all:hover img, .bets-HS .lay-all:hover img, .bets-GH .lay-all:hover img, .bets.disable .back-all img, .disable.bets-HS .back-all img, .disable.bets-GH .back-all img, .bets.disable .lay-all img, .disable.bets-HS .lay-all img, .disable.bets-GH .lay-all img, .line_markets-team, .line_markets-team .game-vs div, .line_market-name span,  .fancy-head h4 span, .fancy-head .tc-content h5 span, .tc-content .fancy-head h5 span, .other-tab, .sportsbook-head h4 span, .sportsbook-head .tc-content h5 span, .tc-content .sportsbook-head h5 span, .o_12bet .path, .o_12bet .slip-wrap h3, .o_12bet .matched-wrap h3, .o_12bet .slider-bar span, .o_12bet .upcome-head, .o_12bet .tab-highlight, .o_12bet .tab-markets, .o_12bet .one_click-setting, .mazaplay .tab-highlight, .mazaplay .tab-markets, .mazaplay .one_click-setting, .mysports247 .path, .mysports247 .tab-highlight, .mysports247 .tab-markets, .mysports247 .one_click-setting, .skyexchange .one_click-setting, .o_spondemo .path, .o_spondemo .slip-wrap h3, .o_spondemo .matched-wrap h3, .o_spondemo .slider-bar span, .o_spondemo .upcome-head, .o_spondemo .one_click-setting, .skyinplay .path, .skyinplay .tab-highlight, .skyinplay .tab-markets, .skyinplay .one_click-setting, .bigexch .path, .bigexch .tab-highlight, .bigexch .tab-markets, .bigexch .one_click-setting, .masterexchange .path, .masterexchange .tab-highlight, .masterexchange .tab-markets, .masterexchange .one_click-setting, .matador .tab-highlight, .matador .tab-markets, .matador .one_click-setting, .fairenter .path, .fairenter .tab-highlight, .fairenter .tab-markets, .fairenter .one_click-setting, .lucky7 .path, .lucky7 .tab-highlight, .lucky7 .tab-markets, .lucky7 .one_click-setting, .qexch .path, .qexch .tab-highlight, .qexch .tab-markets, .qexch .one_click-setting, .betmygame .path, .betmygame .tab-highlight, .betmygame .tab-markets, .betmygame .one_click-setting, .fancyfair .one_click, .fancyfair .one_click.select, .fancyfair .path, .fancyfair .tab-highlight, .fancyfair .tab-markets, .fancyfair .one_click-setting, .maruti .tab-highlight, .maruti .tab-markets, .maruti .one_click-setting, .marutibook .one_click, .marutibook .one_click.select, .marutibook .tab-highlight, .marutibook .tab-markets, .marutibook .one_click-setting, .skyexchange247 .one_click-setting, .oceanexch1 .path, .oceanexch1 .tab-highlight, .oceanexch1 .tab-markets, .oceanbook1 .path, .oceanbook1 .tab-highlight, .oceanbook1 .tab-markets, .probetx .path, .probetx .tab-highlight, .probetx .tab-markets, .probetx .one_click-setting, .alphaexch .tab-highlight, .alphaexch .tab-markets, .alphaexch .one_click-setting, .alphaexchlive .tab-highlight, .alphaexchlive .tab-markets, .alphaexchlive .one_click-setting, .maxexch9 .path, .maxexch9 .tab-highlight, .maxexch9 .tab-markets, .maxexch9 .one_click-setting, .cftbet365 .one_click, .cftbet365 .one_click.select, .cftbet365 .tab-highlight, .cftbet365 .tab-markets, .cftbet365 .one_click-setting, .crickzoom .path, .crickzoom .tab-highlight, .crickzoom .tab-markets, .crickzoom .one_click-setting, .crickzoomlive .path, .crickzoomlive .tab-highlight, .crickzoomlive .tab-markets, .crickzoomlive .one_click-setting, .maxinplay .path, .maxinplay .tab-highlight, .maxinplay .tab-markets, .maxinplay .one_click-setting, .betbarter .path, .betbarter .slip-wrap h3, .betbarter .matched-wrap h3, .betbarter .slider-bar span, .betbarter .upcome-head, .betbarter .tab-highlight, .betbarter .tab-markets, .betbarter .one_click-setting, .probet247 .path, .probet247 .tab-highlight, .probet247 .tab-markets, .probet247 .one_click-setting, .kingfair24 .tab-highlight, .kingfair24 .tab-markets, .kingfair24 .one_click-setting, .sgexch247 .path, .sgexch247 .tab-highlight, .sgexch247 .tab-markets, .sgexch247 .one_click-setting, .sixball .path, .sixball .tab-highlight, .sixball .tab-markets, .sixball .one_click-setting, .sixballio .path, .sixballio .tab-highlight, .sixballio .tab-markets, .sixballio .one_click-setting, .wickets247 .one_click-setting, .crickex .tab-highlight, .crickex .tab-markets, .crickex .one_click, .crickex .one_click.select, .crickex .one_click-setting, .iceEX .one_click, .iceinplay .path, .iceinplay .tab-highlight, .iceinplay .tab-markets, .iceinplay .one_click-setting, .baji .one_click-setting, .baji365 .one_click-setting, .sportsexchlive .one_click-setting, .dafabet .tab-highlight, .dafabet .tab-markets, .dafabet .one_click-setting, .sharet365 .one_click-setting, .baazi365 .one_click-setting, .goexch365 .one_click, .goexch365 .one_click-setting, .sevenexch .path, .sevenexch .one_click-setting, .oxyinplay .one_click-setting, .cricfair .tab-highlight, .cricfair .tab-markets, .cricfair .one_click, .cricfair .one_click.select, .cricfair .one_click-setting, .khelexch .one_click-setting, .lionexch .one_click-setting, .hmsbet .path, .hmsbet .tab-highlight, .hmsbet .tab-markets, .hmsbet .one_click-setting, .jeetbuzz .one_click-setting, .skyfair .one_click-setting, .skyexchange247com .one_click-setting, .mcwex .one_click-setting, .enterfair .path, .enterfair .one_click-setting {
+    background-image: url("../img/bg-sbdc950abeb.png");
+    background-repeat: no-repeat;
+}
+.fancy-head h4 span, .sportsbook-head h4 span, .bookmaker h4 span, .fancy-head .tc-content h5 span, .tc-content .fancy-head h5 span, .sportsbook-head .tc-content h5 span, .tc-content .sportsbook-head h5 span, .bookmaker .tc-content h5 span, .tc-content .bookmaker h5 span {
+    min-width: 72px;
+    background-repeat: repeat-x;
+    line-height: 25px;
+    padding: 0 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.line_market-name {
+    position: absolute;
+    top: -24px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 22px;
+    padding-right: 11px;
+    background-position: 100% -528px;
+}
+
+.line_market-name span {
+    height: 22px;
+    background-repeat: repeat-x;
+    padding-left: 5px;
+    background-position: 0 -7472px;
+}
+.refer_only {
+    position: absolute;
+    top: -24px;
+    font-size: 11px;
+    color: #7e97a7;
+    line-height: 23px;
+    margin-left: 5px;
+}
+.bets-wrap .bet-all {
+    line-height: 22px;
+}
+.bets .bet-all td, .bets-HS .bet-all td, .bets-GH .bet-all td {
+    background-color: transparent;
+    border-left-color: transparent;
+    padding-bottom: 1px;
+    text-align: center;
+}
+.bets .back-all, .bets-HS .back-all, .bets-GH .back-all {
+    background-position: -274px -273px;
+}
+.disabled .back-all, .disabled .back-all:hover {
+    cursor: not-allowed;
+    background-color: transparent;
+    background-position: -374px -251px;
+}
+.bets .bet-all a, .bets-HS .bet-all a, .bets-GH .bet-all a {
+    position: relative;
+    width: 100%;
+    height: 22px;
+    line-height: 21px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bets .bet-all img, .bets-HS .bet-all img, .bets-GH .bet-all img {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 11px);
+    height: 100%;
+}
+.bets .back-all img, .bets-HS .back-all img, .bets-GH .back-all img {
+    left: 11px;
+    background-repeat: repeat-x;
+    background-position: 0 -6277px;
+}
+
+.bets .bet-all span, .bets-HS .bet-all span, .bets-GH .bet-all span {
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    font-size: 12px;
+}
+.bets .lay-all, .bets-HS .lay-all, .bets-GH .lay-all {
+    background-position: 100% -399px;
+}
+.disabled .lay-all, .disabled .lay-all:hover {
+    cursor: not-allowed;
+    background-color: transparent;
+    background-position: 100% -377px;
+}
+.bets .lay-all img, .bets-HS .lay-all img, .bets-GH .lay-all img {
+    right: 11px;
+    background-repeat: repeat-x;
+    background-position: 0 -7428px;
+}
+
+.horse-info, .dog-info {
+    width: 292px;
+    height: 31px;
+}
+.horse-info>dt, .dog-info>dt {
+    flex: 0 0 auto;
+    margin-right: 7px;
+    align-items: center;
+}
+.icon-predict {
+    background-position: -398px -2048px;
+    height: 16px;
+    width: 16px;
+}
+.icon-time, .icon-live, .icon-irun, .icon-predict, .icon-cashout {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    vertical-align: top;
+}
+.horse-info .icon-predict, .dog-info .icon-predict {
+    margin-right: 0;
+}
+.horse-box {
+    min-width: 25px;
+}
+.horse-info li, .dog-info li {
+    list-style: none;
+}
+.horse-box li {
+    list-style: none;
+    font-size: 11px;
+    font-weight: normal;
+}
+.uniform {
+    width: 26px;
+    height: 21px;
+    margin: 0 0 0 3px;
+    background-position: -388px -751px;
+}
+.uniform img {
+    width: 26px;
+    height: 21px;
+}
+.horse-info>dd, .dog-info>dd {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    align-items: center;
+}
+.horse-name {
+    cursor: default;
+    min-width: 0;
+}
+.horse-info li, .dog-info li {
+    list-style: none;
+}
+.horse-name li {
+    font-weight: normal;
+}
+.horse-name li:first-of-type {
+    font-weight: bold;
+}
+.pop-warp, .log-wrap, .streaming-pop, .account-wrap ul, .more_drop-list, .selection-list, .slip_set-pop, .oneclick_set-pop, .path-pop, .tips-popup, .full-amount, .stake-popup, .message-wrap, .dialog-wrap-w, .score-pop, .score-pop-last, .horse_info-hover, .rules-wrap, .pop_box, .filter-pop, .calendarPanel {
+    box-shadow: 0 4px 5px rgb(0 0 0 / 50%);
+}
+.horse_info-hover {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 5px 7px;
+    border-radius: 4px;
+    z-index: 10;
+    pointer-events: none;
+}
+.horse_info-hover dt {
+    clear: left;
+    margin-right: 5px;
+}
+.horse_info-hover dd {
+    clear: right;
+}
+.bets .suspend, .bets-HS .suspend, .bets-GH .suspend {
+    position: static;
+    border-right-width: 0;
+}
+.suspend {
+    position: absolute;
+    width: 24%;
+    height: calc(100% - 2px);
+    background-color: #fff;
+    border: 1px solid #d0021b;
+    color: #d0021b;
+    margin-left: calc(76% - 42px);
+    z-index: 5;
+}
+.bets .suspend span, .bets-HS .suspend span, .bets-GH .suspend span {
+    position: static;
+    top: 0;
+    width: calc(100% - 2px);
+    background-color: #fff;
+    line-height: 37px;
+    border: 1px solid #d0021b;
+    margin-top: 0;
+}
+.suspend span {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -8px;
+}
+.bets .back-3, .bets-HS .back-3, .bets-GH .back-3 {
+    background-color: #d7e8f4;
+    border-left-color: #fff;
+}
+.bets .back-2, .bets-HS .back-2, .bets-GH .back-2 {
+    background-color: #b7d5eb;
+    border-left-color: #fff;
+}
+.bets .lay-1, .bets-HS .lay-1, .bets-GH .lay-1 {
+    background-color: #faa9ba;
+    border-left-color: #fff;
+}
+.bets .lay-1.select, .bets-HS .lay-1.select, .bets-GH .lay-1.select {
+    background-color: #f4496d;
+    color: #fff;
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 50%);
+}
+ 
+.bets .lay-2, .bets-HS .lay-2, .bets-GH .lay-2 {
+    background-color: #efd3d9;
+    border-left-color: #fff;
+}
+.bets .lay-3, .bets-HS .lay-3, .bets-GH .lay-3 {
+    background-color: #f6e6ea;
+    border-left-color: #fff;
+}
+
+.bets .lay-1.select a, .bets-HS .lay-1.select a, .bets-GH .lay-1.select a {
+    color: #fff;
+}
+.disabled .back-all img, .disabled .back-all:hover img {
+    background: url("/desktopfile/img/bg-backall-disabled.png");
+}
+.disabled .lay-all img, .disabled .lay-all:hover img {
+    background: url("/desktopfile/img/bg-layall-disabled.png");
+}
+
+.fancy-head{
+    position: absolute;
+    top: -34px;
+    width: 100%;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    zoom: 1;
+}
+
+.fancy-head {
+    border-bottom-color: #0A92A5;
+}
+.fancy-head h4, .sportsbook-head h4, .bookmaker h4, .fancy-head .tc-content h5, .tc-content .fancy-head h5, .sportsbook-head .tc-content h5, .tc-content .sportsbook-head h5, .bookmaker .tc-content h5, .tc-content .bookmaker h5 {
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #fff;
+    z-index: 1;
+    min-width: 0 !important;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+.fancy-head h4 span, .fancy-head .tc-content h5 span, .tc-content .fancy-head h5 span {
+    background-position: 0 -6368px;
+}
+.fancy-head .in-play span, .sportsbook-head .in-play span, .bookmaker .in-play span {
+    padding: 0 14px 0 8px;
+    display: inline-flex;
+}
+.fancy-head .in-play span:before, .sportsbook-head .in-play span:before, .bookmaker .in-play span:before {
+    content: "";
+    margin: 6px 6px 0 0;
+    background-position: -399px -2607px;
+    height: 15px;
+    width: 15px;
+    display: block;
+}
+.btn-fancybet_rules, .btn-sportsbook_rules {
+    vertical-align: top;
+    margin-left: -4px;
+    background-position: -377px -1415px;
+    height: 25px;
+    width: 37px;
+    display: inline-block;
+}
+ 
+.other-tab {
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    background-repeat: repeat-x;
+    color: #C5D0D7;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-left: 7px;
+    z-index: 0;
+    background-position: 0 -11424px;
+    font-size: 12px;
+}
+ 
+.tag-new:not(*:root) {
+    padding: 1px;
+    transform: scale(1);
+}
+.tag-new {
+    position: absolute;
+    width: 32px;
+    height: 18px;
+    background-size: contain;
+    color: #ffffff;
+    line-height: 12px;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+    z-index: 2;
+}
+.tag-new {
+    position: absolute;
+    width: 32px;
+    height: 18px;
+    background: url("../img/tag.svg") center no-repeat;
+    background-size: contain;
+    color: #ffffff;
+    line-height: 12px;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+    z-index: 2;
+}
+.other-tab .tag-new:not(*:root) {
+    top: -8px;
+    right: -16px;
+}
+.special_bets-tab-wrap, .fancy_bet_tab-wrap {
+    background-image: linear-gradient(
+180deg, #F26D1C 15%, #D14100 100%);
+    box-shadow: inset 0 1px 0 0 rgb(0 0 0 / 20%);
+    justify-content: center;
+    align-items: center;
+}
+.fancy_bet_tab-wrap {
+    background-image: linear-gradient(
+180deg, #0A92A5 15%, #076875 100%);
+display: flex;
+justify-content: center;
+}
+.no_bet {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 7px 10px 17px;
+    border-bottom: 1px solid #7e97a7;
+}
+.bets .special_bet h3, .bets-HS .special_bet h3, .bets-GH .special_bet h3 {
+    position: relative;
+    /* padding: 0 0 0 10px; */
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+}
+.bets .special_bet h3 a, .bets-HS .special_bet h3 a, .bets-GH .special_bet h3 a {
+    color: #fff;
+}
+.fancy_bet .bet-all, .sportsbook_bet .bet-all, .bookmaker_bet .bet-all {
+    line-height: 22px;
+}
+.fancy-suspend span, .fancy-suspend-white span {
+    line-height: 40px;
+}
+.fancy-suspend span, .fancy-suspend-white span {
+    opacity: 0.8;
+    color: #fff;
+    text-shadow: 0 1px 4px rgb(0 0 0 / 50%);
+}
+.fancy-suspend, .fancy-suspend-white {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(36,58,72,0.4);
+    z-index: 5;
+}
+.fancy-suspend, .fancy-suspend-white {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+        align-items: center;
+    
+}
+.fancy-th-layout {
+    width: 100%;
+    height: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.fancy-th-layout dd {
+    margin-right: 8px;
+}
+.fancy-th-layout .dd-tips {
+    width: 205px;
+    justify-content: space-between;
+}
+.fancy-th-layout dd:last-of-type {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.fancy-th-layout .fancy-tips {
+    font-weight: normal;
+    font-size: 11px;
+    list-style: none;
+}
+.dd-tips .fancy-tips:not(*:root) {
+    transform: scale(0.9);
+}
+.btn-live, .btn-book {
+    width: 38px;
+    height: 27px;
+    line-height: 27px;
+    background-color: #ffcc51;
+    border: 1px solid #cf9a47;
+    border-radius: 5px;
+    color: #1e1e1e;
+}
+.btn-book {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    font-weight: normal;
+}
+.fancy-th-layout .btn-book {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 27px;
+    padding: 0;
+}
+.multi_select ul {
+    border-bottom: 1px solid #7E97A7;
+    display: flex;
+    padding-left: 0;
+    height: 45px;
+    margin-bottom: 0;
+}
+.multi_select li {
+    width: calc(50% - 1px);
+    border-left: #fff 1px solid;
+}
+.fancy_bet .td-fancy_merge, .sportsbook_bet .td-fancy_merge, .bookmaker_bet .td-fancy_merge {
+    width: 17.94872%;
+    border-left-width: 0;
+    font-weight: normal;
+    vertical-align: middle;
+}
+td .fancy-info {
+    width: calc(70% - 3%);
+    margin: 4px 0 0 3%;
+    float: left;
+}
+td .fancy-info dt {
+    font-size: 11px;
+}
+td .fancy-info:last-of-type {
+    width: calc(30% - 3%);
+}
+.bets .back-1.single-bet a, .bets-HS .back-1.single-bet a, .bets-GH .back-1.single-bet a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-match{
+    display: grid;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.special_bets-tab .select a {
+    background-color: #fff;
+    color: #a34005;
+    text-decoration: none;
+}
+.fancy_bet_tab-wrap .select a, .fancy_bet_tab-wrap a {
+    color: #076875 !important;
+    padding: 0 14px;
+    cursor: pointer;
+}
+
+.quick-bet-confirm {
+    width: 100%;
+    height: 33px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.5);
+    flex-direction: column;
+    justify-content: center;
+}
+.skyexchange .btn-send.disable, .skyexchange .nova88exch .total_all .disable.search-but, .nova88exch .total_all .skyexchange .disable.search-but {
+    background: #a4a4a4 url("/desktopfile/img/bg-send-disable-skyEX.png") repeat-x;
+    border-color: #aaa;
+    color: #e6dfcd;
+}
+
+.slip-back .col-stake_list, .slip-lay .col-stake_list, .slip-book .col-stake_list {
+    width: 100%;
+}
+.slip-lay .col-stake_list {
+    border-top: 1px solid #dfa3b3;
+    background-color: #faeff2;
+}
+.quick_bet-wrap .col-stake_list {
+    width: calc(100% + 7px + 2px);
+    padding: 5px 0;
+    margin-left: -7px;
+}
+.slip-back .col-stake_list:not(:target), .slip-lay .col-stake_list:not(:target), .slip-book .col-stake_list:not(:target) {
+    display: none;
+}
+
+.slip-back .col-stake_list li, .slip-lay .col-stake_list li, .slip-book .col-stake_list li {
+    width: calc(70% / 6);
+}
+.slip-back .col-stake_list ul, .slip-lay .col-stake_list ul, .slip-book .col-stake_list ul {
+    padding-left: 5px;
+    margin-bottom: 0; 	
+}
+
+.quick_bet-wrap .col-stake_list ul {
+    /* width: 70%; */
+    padding-right: 5px;
+}
+
+input, textarea {
+    font-family: Tahoma, Helvetica, sans-serif;
+    color: #1e1e1e;
+    font-size: 12px;
+    border: 0px #aaa solid;
+    background: #fff;
+    box-shadow: inset 0px 1px 0px rgb(0 0 0 / 50%);
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 5px 5px 0;
+    box-sizing: border-box;
+}
+input[type="checkbox"], textarea[type="checkbox"], input[type="radio"], textarea[type="radio"] {
+    width: auto !important;
+    height: auto !important;
+    border-width: 0;
+    border-radius: 0;
+    background-color: transparent ;
+    /* padding: 0 !important; */
+    box-shadow: none;
+}
+
+.bets th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+td {
+    border-left: none;
+}
+
+.fancy_bet .fancy-suspend-tr th, .sportsbook_bet .fancy-suspend-tr th, .fancy-suspend-tr th, .fancy_bet .fancy-suspend-tr td, .sportsbook_bet .fancy-suspend-tr td, .bookmaker_bet .fancy-suspend-tr td {
+    position: relative;
+    height: 0;
+    border-width: 0;
+    margin-bottom: -1px;
+    padding: 0;
+}
+
+ .fancy-suspend-tr td {
+    position: relative;
+    height: 0;
+    border-width: 0;
+    margin-bottom: -1px;
+    padding: 0;
+}
+
+.bets td, .bets-HS td, .bets-GH td {
+    width: 8.97436%;
+    /* border-bottom: 1px solid #7e97a7; */
+    border-left: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.fancy-suspend, .fancy-suspend-white {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(36,58,72,0.4);
+    z-index: 5;
+}
+
+.fancy-suspend span, .fancy-suspend-white span {
+    opacity: 0.8;
+    color: #fff;
+    text-shadow: 0 1px 4px rgb(0 0 0 / 50%);
+}
+
+.back-gradient, .lay-gradient {
+    height: 46px;
+}
+
+/* bet slip   */
+
+
+.slip-head, .matched-head, .for-agent, .head-bets-agent, .expand>td {
+    box-shadow: inset 0 2px 0 rgb(0 0 0 / 10%);
+}
+
+.slip-head, .matched-head {
+    background-color: #CED5DA;
+    padding: 0 10px;
+    margin-bottom: 0;
+}
+
+.slip-head, .slip-head li {
+	display: block;
+}
+
+.slip-head li, .matched-head li {
+    padding: 5px 0;
+}
+
+.slip-head li {
+	float: left;
+}
+
+.slip-head .col-bet, .matched-head .col-bet {
+    width: 43.23529%;
+}
+
+.align-L, .table01 caption, .table-s caption, .slip-back .refer, .slip-lay .refer, .slip-book .refer, .slip-back .keep-option, .slip-lay .keep-option, .slip-book .keep-option, .message-bet p, .slip-head .col-bet, .matched-head .col-bet, .tips-popup, .full-amount, .no-data, .event-left .col-game, .event-right .col-game, .event-left .game-list-col dt, .game-list-col .event-left dt, .event-right .game-list-col dt, .game-list-col .event-right dt, .bets th, .bets-HS th, .bets-GH th, .bets .refer-bet, .bets-HS .refer-bet, .bets-GH .refer-bet, .bets .refer-book, .bets-HS .refer-book, .bets-GH .refer-book, .bets .special_bet td, .bets-HS .special_bet td, .bets-GH .special_bet td, .fancy_bet .td-fancy_merge, .sportsbook_bet .td-fancy_merge, .bookmaker_bet .td-fancy_merge, .fancy_bet .fancy-quick-tr td, .sportsbook_bet .fancy-quick-tr td, .bookmaker_bet .fancy-quick-tr td {
+    text-align: left;
+}
+
+.slip-head .col-odd, .matched-head .col-odd {
+    width: 14.70588%;
+}
+
+
+.slip-head .col-stake, .matched-head .col-stake {
+    width: 16.17647%;
+    padding-left: 5px;
+}
+
+.slip-head .col-profit, .matched-head .col-profit {
+    width: 24.11765%;
+}
+.align-R, .table01, .table-s, .slip-back input, .slip-lay input, .slip-book input, .slip-back textarea, .slip-lay textarea, .slip-book textarea, .slip-back .col-profit, .slip-lay .col-profit, .slip-book .col-profit, .slip-back .inn_runs dd, .slip-lay .inn_runs dd, .slip-book .inn_runs dd, .account-wrap .main-wallet p, .time_zone, .path ul, .slip-head .col-profit, .matched-head .col-profit, .cashout-wrap dl, .change-channel span, .game-team .game-visit, .game-scores .game-visit, .bets .refer-book, .bets-HS .refer-book, .bets-GH .refer-book, .quick-bet-confirm li, .form_list dt, .table-trans .unit-num {
+    text-align: right;
+}
+
+.clearfix:after, .over-wrap:after, .pop-warp:after, .log-wrap:after, .streaming-pop:after, .col-center:after, .slip-back .col-stake_list ul:after, .slip-lay .col-stake_list ul:after, .slip-book .col-stake_list ul:after, .login-wrap:after, .account-wrap:after, .menu:after, .setting-wrap:after, .slip-head:after, .matched-head:after, .stake-popup:after, .btn-wrap:after, .slip-option:after, .cashout-wrap:after, .slider:after, .tab-highlight:after, .tab-markets:after, .game-wrap-horse .hs-time:after, .game-scores .scores-time:after, .game-scores ul:after, .tab-HS:after, .game-info:after, .multi_select ul:after, .marquee-pop .input-list:after, .marquee-pop .filter-list:after, .tab:after, .input-list:after, .filter-list:after, .filter-pop ul:after, .acc-info:after, .total-show:after, .change_pass:after, .game-wrap:after, .game-highlight-wrap:after, .game-wrap-horse:after, .slip-back:after, .slip-lay:after, .slip-book:after, .fancy-head:after, .sportsbook-head:after, .bookmaker:after, .fancy-head h4:after, .sportsbook-head h4:after, .bookmaker h4:after, .fancy-head .tc-content h5:after, .tc-content .fancy-head h5:after, .sportsbook-head .tc-content h5:after, .tc-content .sportsbook-head h5:after, .bookmaker .tc-content h5:after, .tc-content .bookmaker h5:after, .menu-wrap:after, .stake-set:after, .odds-set:after, .slip-list:after, .full_btn:after, .sum:after, .upcome:after, .marquee-box:after, .game-list-col:after, .game-list-col dd:after, .game-head:after, .game-info-wrap:after, .head-bets-agent:after, .line_market-name:after, .one_click-setting:after, .quick_bet-wrap:after, .quick_bet-wrap .col-stake_list:after, .form_list dd:after, .white-wrap:after, .pop-left dl:after, .pop-left dd:after, .initial-balance:after, .final-balance:after, .result-search:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.slip-list h4, .slip-list .tc-content h5, .tc-content .slip-list h5 {
+    font-weight: normal;
+    padding: 2px 0 0 5px;
+    margin-bottom: 4px;
+    font-size: 11px;
+}
+
+.main-sprite, .btn-close, .icon-time, .icon-live, .icon-irun, .icon-predict, .icon-cashout, .icon-in_play, .icon-no_play, .icon-cricket, .icon-soccer, .icon-tennis, .icon-basketball, .icon-dog, .icon-HR, .icon-racing, .game-wrap .to-expand, .game-highlight-wrap .to-expand, .game-wrap-horse .to-expand, .close.game-wrap .to-expand, .close.game-highlight-wrap .to-expand, .close.game-wrap-horse .to-expand, .o_spondemo .game-wrap .to-expand, .o_spondemo .game-highlight-wrap .to-expand, .o_spondemo .game-wrap-horse .to-expand, .o_spondemo .close.game-wrap .to-expand, .o_spondemo .close.game-highlight-wrap .to-expand, .o_spondemo .close.game-wrap-horse .to-expand, .in-play.game-fancy:before, .in-play.game-sportsbook:before, .in-play.game-bookmaker:before, .in-play.game-live:before, .fancy-head .in-play span:before, .sportsbook-head .in-play span:before, .bookmaker .in-play span:before, .favor, .favor.select, .upcome-head dt, .tab-highlight a, .tab-markets a, .tab-highlight a.select, .tab-markets a.select, .transfer-wrap .close, .transfer-wrap-slider .close, .login_to_go .close, .live-list a:after, .icon-TV_head, .marquee-box h4:before, .marquee-box .tc-content h5:before, .tc-content .marquee-box h5:before,  .marquee-box .tc-content h5:after, .tc-content .marquee-box h5:after, .game-list-col dd .info, .game-list-col .col-visit, .game-list-col .col-home, .game-list-col .col-draw, .game-head .favor, .game-head .favor.select, .game-head .refresh, .game-team .game-visit span, .game-scores .game-visit span, .game-team .game-home span, .game-scores .game-home span, .game-scores ul .scores-box, .its_turn, .icon-card-yellow, .icon-card-red, .score-pop:before, .score-pop-last:before, .scores-event img, .scores-line img, .match-odds img, .tab-HS .more_drop, .tab-HS .more_drop.select, .open-tv-wrap:before, .bets .back-all, .bets-HS .back-all, .bets-GH .back-all, .bets .lay-all, .bets-HS .lay-all, .bets-GH .lay-all, .bets .special_bet .btn-fancy_info, .bets-HS .special_bet .btn-fancy_info, .bets-GH .special_bet .btn-fancy_info, .bets.disable .back-all, .disable.bets-HS .back-all, .disable.bets-GH .back-all, .bets.disable .lay-all, .disable.bets-HS .lay-all, .disable.bets-GH .lay-all, .bets .to-expand, .bets-HS .to-expand, .bets-GH .to-expand, .bets.close .to-expand, .close.bets-HS .to-expand, .close.bets-GH .to-expand, .disabled .back-all, .disabled .back-all:hover, .disabled .lay-all, .disabled .lay-all:hover, .uniform, .more, .line_markets-team .game-visit span, .line_markets-team .game-home span, .line_markets-team .game-vs div:before, .line_markets-team .game-vs div:after, .btn-rules img, .line_market-name, .add-pin, .delete-pin, .col-info .add-pin, .col-info .delete-pin, h3 .add-pin, h3 .delete-pin, h4 .add-pin, .tc-content h5 .add-pin, h4 .delete-pin, .tc-content h5 .delete-pin, .arrow-dialog, .one_click-setting .a-edit img, .one_click-stake, .quick_bet-wrap .odd-add .up, .quick_bet-wrap .odd-add .down, .quick_bet-wrap .odd-add.disable .up, .quick_bet-wrap .odd-add.disable .down, .edit img, .other-tab:before, .other-tab:after, .btn-fancybet_rules, .btn-sportsbook_rules, .o_12bet .game-wrap .to-expand, .o_12bet .game-wrap.close .to-expand, .o_12bet .tab-highlight a, .o_12bet .tab-markets a, .o_12bet .tab-highlight a.select, .o_12bet .tab-markets a.select, .o_12bet .game-wrap-horse .to-expand, .o_12bet .game-wrap-horse.close .to-expand, .o_12bet .add-pin h3, .o_12bet .delete-pin h3, .o_12bet .one_click-stake, .mazaplay .one_click-setting .a-edit img, .mazaplay .one_click-stake, .mysports247 .one_click-setting .a-edit img, .mysports247 .one_click-stake, .skyexchange .login_to_go .close, .skyexchange .one_click-setting .a-edit img, .skyexchange .one_click-stake, .o_spondemo .tab-highlight, .o_spondemo .tab-markets, .o_spondemo .tab-highlight a, .o_spondemo .tab-markets a, .o_spondemo .tab-highlight a.select, .o_spondemo .tab-markets a.select, .o_spondemo .add-pin h3, .o_spondemo .delete-pin h3, .o_spondemo .one_click-stake, .skyinplay .one_click-setting .a-edit img, .skyinplay .one_click-stake, .bigexch .one_click-setting .a-edit img, .bigexch .one_click-stake, .masterexchange .login_to_go .close, .masterexchange .one_click-setting .a-edit img, .masterexchange .one_click-stake, .matador .one_click-setting .a-edit img, .matador .one_click-stake, .fairenter .one_click-setting .a-edit img, .fairenter .one_click-stake, .lucky7 .one_click-setting .a-edit img, .lucky7 .one_click-stake, .qexch .one_click-setting .a-edit img, .qexch .one_click-stake, .betmygame .one_click-setting .a-edit img, .betmygame .one_click-stake, .fancyfair .one_click-setting .a-edit img, .fancyfair .one_click-stake, .maruti .one_click-setting .a-edit img, .maruti .one_click-stake, .marutibook .one_click-setting .a-edit img, .marutibook .one_click-stake, .skyexchange247 .login_to_go .close, .skyexchange247 .one_click-setting .a-edit img, .skyexchange247 .one_click-stake, .probetx .one_click-setting .a-edit img, .probetx .one_click-stake, .alphaexch .one_click-setting .a-edit img, .alphaexch .one_click-stake, .alphaexchlive .one_click-setting .a-edit img, .alphaexchlive .one_click-stake, .maxexch9 .one_click-setting .a-edit img, .maxexch9 .one_click-stake, .cftbet365 .one_click-setting .a-edit img, .cftbet365 .one_click-stake, .crickzoom .one_click-setting .a-edit img, .crickzoom .one_click-stake, .crickzoomlive .one_click-setting .a-edit img, .crickzoomlive .one_click-stake, .maxinplay .one_click-setting .a-edit img, .maxinplay .one_click-stake, .betbarter .game-wrap .to-expand, .betbarter .game-wrap.close .to-expand, .betbarter .tab-highlight a, .betbarter .tab-markets a, .betbarter .tab-highlight a.select, .betbarter .tab-markets a.select, .betbarter .game-wrap-horse .to-expand, .betbarter .game-wrap-horse.close .to-expand, .betbarter .add-pin h3, .betbarter .delete-pin h3, .betbarter .one_click-stake, .probet247 .one_click-setting .a-edit img, .probet247 .one_click-stake, .kingfair24 .one_click-setting .a-edit img, .kingfair24 .one_click-stake, .sgexch247 .one_click-setting .a-edit img, .sgexch247 .one_click-stake, .sixball .one_click-setting .a-edit img, .sixball .one_click-stake, .sixballio .one_click-setting .a-edit img, .sixballio .one_click-stake, .wickets247 .login_to_go .close, .wickets247 .one_click-setting .a-edit img, .wickets247 .one_click-stake, .crickex .login_to_go .close, .crickex .one_click-setting .a-edit img, .crickex .one_click-stake, .iceEX .login_to_go .close, .iceEX .one_click-setting .a-edit img, .iceEX .one_click-stake, .iceinplay .one_click-setting .a-edit img, .iceinplay .one_click-stake, .dhoom .login_to_go .close, .dhoom .one_click-setting .a-edit img, .dhoom .one_click-stake, .baji .login_to_go .close, .baji .one_click-setting .a-edit img, .baji .one_click-stake, .agexch247 .login_to_go .close, .agexch247 .one_click-setting .a-edit img, .agexch247 .one_click-stake, .baji365 .login_to_go .close, .baji365 .one_click-setting .a-edit img, .baji365 .one_click-stake, .sportsexchlive .login_to_go .close, .sportsexchlive .one_click-setting .a-edit img, .sportsexchlive .one_click-stake, .dafabet .one_click-setting .a-edit img, .dafabet .one_click-stake, .sharet365 .login_to_go .close, .sharet365 .one_click-setting .a-edit img, .sharet365 .one_click-stake, .baazi365 .login_to_go .close, .baazi365 .one_click-setting .a-edit img, .baazi365 .one_click-stake, .goexch365 .login_to_go .close, .goexch365 .one_click-setting .a-edit img, .goexch365 .one_click-stake, .sevenexch .one_click-setting .a-edit img, .sevenexch .one_click-stake, .oxyinplay .login_to_go .close, .oxyinplay .one_click-setting .a-edit img, .oxyinplay .one_click-stake, .cricfair .login_to_go .close, .cricfair .one_click-setting .a-edit img, .cricfair .one_click-stake, .khelexch .one_click-setting .a-edit img, .khelexch .one_click-stake, .lionexch .login_to_go .close, .lionexch .one_click-setting .a-edit img, .lionexch .one_click-stake, .hmsbet .one_click-setting .a-edit img, .hmsbet .one_click-stake, .regalexch365 .login_to_go .close, .regalexch365 .one_click-setting .a-edit img, .regalexch365 .one_click-stake, .jeetbuzz .login_to_go .close, .jeetbuzz .one_click-setting .a-edit img, .jeetbuzz .one_click-stake, .skyfair .login_to_go .close, .skyfair .one_click-setting .a-edit img, .skyfair .one_click-stake, .skyexchange247com .login_to_go .close, .skyexchange247com .one_click-setting .a-edit img, .skyexchange247com .one_click-stake, .mcwex .login_to_go .close, .mcwex .one_click-setting .a-edit img, .mcwex .one_click-stake, .enterfair .one_click-setting .a-edit img, .enterfair .one_click-stake, .suninplay .login_to_go .close, .suninplay .one_click-setting .a-edit img, .suninplay .one_click-stake, .nova88exch .login_to_go .close, .nova88exch .one_click-setting .a-edit img, .nova88exch .one_click-stake, .betbhai247 .login_to_go .close, .betbhai247 .one_click-setting .a-edit img, .betbhai247 .one_click-stake, .srexch .login_to_go .close, .srexch .one_click-setting .a-edit img, .srexch .one_click-stake, .sixballcric .login_to_go .close, .sixballcric .one_click-setting .a-edit img, .sixballcric .one_click-stake, .dollarexc .login_to_go .close, .dollarexc .one_click-setting .a-edit img, .dollarexc .one_click-stake, .smash .one_click-setting .a-edit img, .smash .one_click-stake, .jua247 .login_to_go .close, .jua247 .one_click-setting .a-edit img, .jua247 .one_click-stake, .shambhu9 .login_to_go .close, .shambhu9 .one_click-setting .a-edit img, .shambhu9 .one_click-stake, .sairamexch .one_click-stake {
+    background-image: url(../img/main-s56e8305f6b.png);
+    background-repeat: no-repeat;
+}
+
+.icon-in_play {
+    margin-right: 5px;
+    background-position: -406px -2569px;
+    height: 8px;
+    width: 8px;
+}
+
+.slip-lay {
+    background-color: #f3dce2;
+    border-bottom: 1px solid #dfa3b3;
+}
+
+.slip-back {
+    background-color: #beddf4;
+    border-bottom: 1px solid #67afe5;
+}
+
+.slip-lay .slip-type {
+    background-color: #dfa3b3;
+}
+
+.right-sprite, .loading img, .delete, .slip-wrap .to-expand, .matched-wrap .to-expand, .live-wrap .to-expand, .tv-wrap .to-expand, .close.slip-wrap .to-expand, .close.matched-wrap .to-expand, .close.live-wrap .to-expand, .close.tv-wrap .to-expand, .slip_set-pop .slip_set, .oneclick_set-pop .slip_set, .slip-wrap .slip_set, .odd-add .up, .odd-add .down, .odd-add.disable .up, .odd-add.disable .down, .slip_refresh, .live:before, .tv_popup, .icon-TV, .multi_refresh, .o_12bet .slip-wrap .to-expand, .o_12bet .slip-wrap.close .to-expand, .o_12bet .matched-wrap .to-expand, .o_12bet .matched-wrap.close .to-expand, .o_12bet .slip_refresh, .o_spondemo .slip-wrap .to-expand, .o_spondemo .slip-wrap.close .to-expand, .o_spondemo .matched-wrap .to-expand, .o_spondemo .matched-wrap.close .to-expand, .o_spondemo .slip_refresh, .o_spondemo .multi_refresh, .betbarter .slip-wrap .to-expand, .betbarter .slip-wrap.close .to-expand, .betbarter .matched-wrap .to-expand, .betbarter .matched-wrap.close .to-expand, .betbarter .slip_refresh {
+    background-image: url(/desktopfile/img/right-sdc390e89c4.png);
+    background-repeat: no-repeat;
+}
+
+.float-L, .delete, .slip-back .col-stake_list ul li, .slip-lay .col-stake_list ul li, .slip-book .col-stake_list ul li, .login-wrap li, .account-wrap li, .menu li, .setting-wrap li, .slip-head li, .matched-head li, .stake-popup li, .btn-wrap li, .slip-option li, .cashout-wrap li, .slider li, .tab-highlight li, .tab-markets li, .game-wrap-horse .hs-time li, .game-scores .scores-time li, .game-scores ul li, .tab-HS li, .game-info li, .multi_select ul li, .marquee-pop .input-list li, .marquee-pop .filter-list li, .tab li, .input-list li, .filter-list li, .filter-pop ul li, .acc-info li, .total-show li, .login-panel, .change_pass .login-panel, .change_pass .note, .slip-wrap .slip_set, .slip_refresh, .tv_popup, .slip-back dt, .slip-lay dt, .slip-book dt, .slip-back dt .slip-type, .slip-lay dt .slip-type, .slip-book dt .slip-type, .slip-back dd, .slip-lay dd, .slip-book dd, .fancy-head h4, .sportsbook-head h4, .bookmaker h4, .fancy-head .tc-content h5, .tc-content .fancy-head h5, .sportsbook-head .tc-content h5, .tc-content .sportsbook-head h5, .bookmaker .tc-content h5, .tc-content .bookmaker h5, .fancy-head .in-play span:before, .sportsbook-head .in-play span:before, .bookmaker .in-play span:before, .login-wrap .btn-login, .login-wrap .btn-signup, .kv, .header h1, .login-wrap input, .login-wrap textarea, .menu, .setting-wrap, .stake-set dd, .odds-set dd, .sum dt, .sum dd, .slider, .favor, .event-left, .event-right, .event-left .slip-head span, .event-right .slip-head span, .event-left .matched-head span, .event-right .matched-head span, .live-left, .live-right, .live-channel span, .marquee-box .marquee a, .game-list-col dt, .game-list-col dd, .game-list-col dd a, .scores-event, .scores-line, .match-odds, .game-info, .head-bets-agent .game-matched, .head-bets-agent .game-low_liq, .bets .bet-all a, .bets-HS .bet-all a, .bets-GH .bet-all a, .horse-box, .uniform, .horse_info-hover dt, .horse_info-hover dd, .line_market-name span, h3 .add-pin, h3 .delete-pin, h4 .add-pin, .tc-content h5 .add-pin, h4 .delete-pin, .tc-content h5 .delete-pin, .one_click-setting h4, .one_click-setting .tc-content h5, .tc-content .one_click-setting h5, .quick_bet-wrap dt, .quick_bet-wrap dd, .other-tab, .search-wrap, .profile-wrap dt, .form_list dt, .filter-pop .btn-wrap .btn, .filter-pop .btn-wrap .btn-send, .filter-pop .btn-wrap .nova88exch .total_all .search-but, .nova88exch .total_all .filter-pop .btn-wrap .search-but, .filter-pop .btn-wrap .pages a, .pages .filter-pop .btn-wrap a, .filter-pop .btn-wrap .calendarTable_inputBox input, .calendarTable_inputBox .filter-pop .btn-wrap input, .filter-pop .btn-wrap .calendarTable_inputBox textarea, .calendarTable_inputBox .filter-pop .btn-wrap textarea, .market-float, .sum-pl dt, .head-balance, .pop-left, .pop-left dt, .select-betting .selection, .pop-right, .initial-balance dt, .final-balance dt, .initial-balance dd, .final-balance dd, .initial-balance dt span, .final-balance dt span, .result-search .tab {
+    float: left;
+}
+
+.delete {
+    background-position: -63px -135px;
+    height: 32px;
+    width: 17px;
+}
+
+.delete, .btn-close, .header h1, .mysports247 .header h1, .maxinplay .header h1, .maxexch9 .header h1, .mazaplay .header h1, .kingfair24 .header h1, .alphaexch .header h1, .alphaexchlive .header h1, .skyexchange .header h1, .sixballcric .header h1, .skyfair .header h1, .mcwex .header h1, .dollarexc .header h1, .shambhu9 .header h1, .sairamexch .header h1, .goexch365 .header h1, .agexch247 .header h1, .suninplay .header h1, .betbhai247 .header h1, .oxyinplay .header h1, .iceEX .header h1, .o_spondemo .header h1, .o_12bet .header h1, .dafabet .header h1, .skyinplay .header h1, .probetx .header h1, .sevenexch .header h1, .probet247 .header h1, .bigexch .header h1, .sixball .header h1, .sixballio .header h1, .sgexch247 .header h1, .sharet365 .header h1, .jua247 .header h1, .baji .header h1, .baji365 .header h1, .baazi365 .header h1, .lionexch .header h1, .masterexchange .header h1, .matador .header h1, .fairenter .header h1, .lucky7 .header h1, .dhoom .header h1, .qexch .header h1, .iceinplay .header h1, .betmygame .header h1, .regalexch365 .header h1, .khelexch .header h1, .fancyfair .header h1, .maruti .header h1, .marutibook .header h1, .skyexchange247 .header h1, .skyexchange247com .header h1, .oceanexch1 .header h1, .oceanbook1 .header h1, .wicketslive .header h1, .wicketspro .header h1, .yabo101sport .header h1, .aecricket888 .header h1, .cftbet365 .header h1, .crickzoom .header h1, .crickzoomlive .header h1, .betbarter .header h1, .wickets247 .header h1, .crickex .header h1, .hmsbet .header h1, .cricfair .header h1, .nova88exch .header h1, .jeetbuzz .header h1, .enterfair .header h1, .srexch .header h1, .smash .header h1, .slip-wrap .slip_set, .slip_refresh, .tv_popup, .game-fancy, .game-sportsbook, .game-bookmaker, .game-live, .language, .menu-list .Go, .path .path-back, .odd-add a, .slider-bar a, .favor,  .transfer-wrap .close, .transfer-wrap-slider .close, .transferId-con dd .copy-but, .transferId-con .mainBalance dd .refresh-but, .login_to_go .close, .game-list-col dd .info, .game-head .favor, .game-head .refresh, .tv-control a, .bets .special_bet .btn-fancy_info, .bets-HS .special_bet .btn-fancy_info, .bets-GH .special_bet .btn-fancy_info, .add-pin, .delete-pin, .multi_refresh, .btn-fancybet_rules, .btn-sportsbook_rules, .download-list dd a, .special_bets-tab .more_drop>a, .close_pop, .on_live .live_icon span {
+    font-size: 0;
+    text-indent: -99999px;
+}
+
+.match_odds .center-m p {
+    font-size: 13px;
+    color: #000;
+    text-transform: capitalize;
+    margin-bottom: 0 !important;
 }

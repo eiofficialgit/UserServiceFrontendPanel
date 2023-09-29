@@ -49,6 +49,58 @@ async function getSoccerMatch(){
                                 </td>
                             </tr>`;
       }
+      getCompetitionName();
   }
   
   getSoccerMatch();
+
+  async function getCompetitionName(){
+    const response = await fetch("http://localhost:7074/exuser/competitionList/1");
+    const competitionData = await response.json();
+    showCompetitionName(competitionData);
+  }
+
+  function showCompetitionName(competitionData) { 
+    let competitionListElement = document.getElementById("competationContent");
+    competitionListElement.innerHTML = "";
+    for (let i = 0; i < competitionData.length; i++) {
+        let competition = competitionData[i];
+        let listItem = document.createElement("li");
+        listItem.style.cursor="pointer";
+        let link = document.createElement("a");
+        link.textContent = competition;
+        link.addEventListener("click", function () {
+            makeApiRequest(competition);
+        });
+        listItem.appendChild(link);
+        let icon = document.createElement("i");
+        icon.className = "fa fa-angle-right";
+        listItem.appendChild(icon);
+        competitionListElement.appendChild(listItem);
+    }
+  }
+  
+async function makeApiRequest(competition){
+    const response = await fetch(`http://localhost:7074/exuser/getByCompetitionName/${competition}`);
+    const competitionData = await response.json();
+    let competitionListElement = document.getElementById("competationContent");
+    competitionListElement.innerHTML = "";
+    if(competitionData.length === 0){
+        competitionListElement.innerHTML = `<li><a style="text-decoration: none;" href="/user/matchodds">Match Odds</a><i class="fa fa-angle-right"></i></li>`;
+    }
+    for (let i = 0; i < competitionData.length; i++) {
+        let competition = competitionData[i].eventName;
+        let listItem = document.createElement("li");
+        listItem.style.cursor="pointer";
+        let link = document.createElement("a");
+        link.textContent = competition;
+        link.addEventListener("click", function () {
+            makeApiRequest(competition);
+        });
+        listItem.appendChild(link);
+        let icon = document.createElement("i");
+        icon.className = "fa fa-angle-right";
+        listItem.appendChild(icon);
+        competitionListElement.appendChild(listItem);
+    }
+}

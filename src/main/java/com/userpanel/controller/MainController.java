@@ -59,5 +59,11 @@ public class MainController {
 		return "binary";
 	}
 	
+	@RequestMapping("/matchodds")
+	public String matchodds(Model model) {
+		model.addAttribute("title", "Match Odd - Sky Exchange");
+		model.addAttribute("js", "matchodds.js");
+		return "matchodds";
+	}
 
 }
