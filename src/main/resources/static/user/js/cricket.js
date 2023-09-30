@@ -1,7 +1,9 @@
 function checkInplayStatus(openDate){
     const specifiedDate = new Date(openDate);
     const currentDate = new Date();
-    return specifiedDate > currentDate;
+    const specifiedDateDate = new Date(specifiedDate.getFullYear(), specifiedDate.getMonth(), specifiedDate.getDate());
+    const currentDateDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+    return specifiedDateDate.getTime() === currentDateDate.getTime() && specifiedDate > currentDate;
 }
 
 async function getCricketMatch(){
@@ -19,7 +21,7 @@ async function getCricketMatch(){
       content.innerHTML += `<tr>
                               <th>
                                   <i class="fa fa-circle" aria-hidden="true"></i>
-                                  <a href="">
+                                  <a href="/user/matchodds">
                                       ${child.eventName}
                                       <span class="play">${inplaystatus? 'In-Play' : child.openDate}</span>
                                       <i class="fas fa-alarm-clock"></i>
