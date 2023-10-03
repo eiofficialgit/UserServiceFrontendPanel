@@ -2,6 +2,7 @@ package com.userpanel.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -59,8 +60,8 @@ public class MainController {
 		return "binary";
 	}
 	
-	@RequestMapping("/matchodds")
-	public String matchodds(Model model) {
+	@RequestMapping("/matchodds/{sportsId}/{eventId}")
+	public String matchodds(Model model, @PathVariable String sportsId, @PathVariable String eventId) {
 		model.addAttribute("title", "Match Odd - Sky Exchange");
 		model.addAttribute("js", "matchodds.js");
 		return "matchodds";

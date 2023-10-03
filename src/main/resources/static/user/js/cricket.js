@@ -21,7 +21,7 @@ async function getCricketMatch(){
       content.innerHTML += `<tr>
                               <th>
                                   <i class="fa fa-circle" aria-hidden="true"></i>
-                                  <a href="/user/matchodds">
+                                  <a href="/user/matchodds/4/${child.eventId}">
                                       ${child.eventName}
                                       <span class="play">${inplaystatus? 'In-Play' : child.openDate}</span>
                                       <i class="fas fa-alarm-clock"></i>
