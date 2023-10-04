@@ -2715,7 +2715,7 @@ input[type=range]::-webkit-slider-thumb {
 .left-top a p {
     text-align: right;
     position: absolute;
-    left: 173px;
+    left: 15px;
     background: #818181;
     font-weight: bold;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 70% 100%, 96% 51%, 71% 0);
@@ -3479,7 +3479,7 @@ i.fas.fa-alarm-clock {
 }
 
 .cricket .center-c .hi-cri table tbody tr th a {
-    font-size: 12px;
+    font-size: 11px;
     text-decoration: none;
 }
 
@@ -3490,7 +3490,7 @@ i.fas.fa-alarm-clock {
 .cricket .center-c .hi-cri table tbody tr th a .play {
     color: #2da20f;
     padding-left: 9px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .cricket .center-c .hi-cri table tbody tr td .blue {
@@ -3517,7 +3517,7 @@ i.fas.fa-alarm-clock {
 
 .cricket .center-c .hi-cri table tbody tr td .col-div {
     display: flex;
-    margin-right: -9px;
+    margin-right: 4px;
     margin-top: 3px;
     margin-bottom: 3px;
 }
@@ -3738,7 +3738,7 @@ i.fa.fa-circle {
 }
 
 .soccer .center-s .hi-cri table tbody tr th a {
-    font-size: 12px;
+    font-size: 11px;
     text-decoration: none;
 }
 
@@ -3755,7 +3755,7 @@ i.fa.fa-circle {
 .soccer .center-s .hi-cri table tbody tr th a .play {
     color: #2da20f;
     padding-left: 9px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .soccer .center-s .hi-cri table tbody tr td .blue {
@@ -3782,7 +3782,7 @@ i.fa.fa-circle {
 
 .soccer .center-s .hi-cri table tbody tr td .col-div {
     display: flex;
-    margin-right: -40px;
+    margin-right: 4px;
     margin-top: 3px;
     margin-bottom: 3px;
 }

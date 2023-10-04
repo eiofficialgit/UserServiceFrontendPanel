@@ -15,6 +15,7 @@ async function getMatchOddsData(){
     const eventId = getEventId();
     const response = await fetch(`http://localhost:7074/exuser/getsportid/${sportId}/${eventId}`);
     const cricketmatches = await response.json();
+    document.getElementById("competionField").innerHTML=cricketmatches[0].eventName;
     showMatchOddsData(cricketmatches[0].matchRunners);
     showBookmakerMarketData(cricketmatches[0].matchRunners);
 }

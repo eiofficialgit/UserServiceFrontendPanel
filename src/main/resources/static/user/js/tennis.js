@@ -29,23 +29,23 @@ async function getTennisMatch(){
                                     </a>
                                 </th>
                                 <td>
-                                    <div class="col-div">
-                                        <input type="button" value="1.25" class="blue">
-                                        <input type="button" value="1.26" class="pink">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="col-div">
-                                        <input type="button" value="-" class="blue">
-                                        <input type="button" value="-" class="pink">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="col-div">
-                                        <input type="button" value="1.23" class="blue">
-                                        <input type="button" value="1.33" class="pink">
-                                    </div>
-                                </td>
+                                  <div class="col-div">
+                                      <input type="button" value="${child.odds[0].b1}" class="blue">
+                                      <input type="button" value="${child.odds[0].l1}" class="pink">
+                                  </div>
+                              </td>
+                              <td>
+                                  <div class="col-div">
+                                      <input type="button" value="${child.odds[0].b2}" class="blue">
+                                      <input type="button" value="${child.odds[0].l2}" class="pink">
+                                  </div>
+                              </td>
+                              <td>
+                                  <div class="col-div">
+                                      <input type="button" value="${child.odds[0].b3}" class="blue">
+                                      <input type="button" value="${child.odds[0].l3}" class="pink">
+                                  </div>
+                              </td>
                                 <td>
                                     <i class="fas fa-thumbtack"></i>
                                 </td>
