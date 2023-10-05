@@ -1,3 +1,56 @@
+document.addEventListener("DOMContentLoaded", function () {
+    var firstRunnerData;
+    var secondRunnerData;
+    var oddssocket;
+    var eventId = getEventId(); 
+  
+    oddssocket = io("https://data.betcair.in", { transports: ["websocket"] });
+    oddssocket.on("connect", () => {
+      console.log("Connection Established");
+    });
+  
+    var firstRunnerRow = document.querySelector("#firstRunnerRow");
+    var secondRunnerRow = document.querySelector("#secondRunnerRow");
+    var SocketUrl = "Event/Auto/" + eventId;
+    oddssocket.emit("Event/Auto", eventId);
+  
+    oddssocket.on(SocketUrl, (result) => {
+      var jsonData = result;
+      firstRunnerData = jsonData.data[0].runners[0];
+      secondRunnerData = jsonData.data[0].runners[1];
+      updateRow(firstRunnerRow, firstRunnerData.ex);
+      updateRow(secondRunnerRow, secondRunnerData.ex);
+    });
+  
+    function updateRow(row, data) {
+      var backData = data.availableToBack;
+      var layData = data.availableToLay;
+  
+      for (var i = 0; i < 3; i++) {
+        var cell = row.cells[i + 1];
+        if (i < backData.length) {
+          cell.innerHTML = backData[i].price + "<br>" + backData[i].size;
+        } else {
+          cell.textContent = "-";
+        }
+      }
+  
+      for (var i = 0; i < 3; i++) {
+        var cell = row.cells[i + 4];
+        if (i < layData.length) {
+          cell.innerHTML = layData[i].price + "<br>" + layData[i].size;
+        } else {
+          cell.textContent = "-";
+        }
+      }
+    }
+  });
+  
+
+
+
+
+
 function getSportId() {
     const currentUrl = window.location.pathname;
     const userid = currentUrl.split("/")[3];
