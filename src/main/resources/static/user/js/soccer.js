@@ -18,6 +18,22 @@ async function getSoccerMatch(){
     for (let i = 0; i < cricketmatches.length; i++) {
       let child = cricketmatches[i];
       let inplaystatus=checkInplayStatus(child.openDate);
+      let b1Value = '-';
+        let l1Value = '-';
+        let b2Value = '-';
+        let l2Value = '-';
+        let b3Value = '-';
+        let l3Value = '-';
+
+        if (child.odds && child.odds[0]) {
+        const odds = child.odds[0];
+        b1Value = odds.b1 || '-';
+        l1Value = odds.l1 || '-';
+        b2Value = odds.b2 || '-';
+        l2Value = odds.l2 || '-';
+        b3Value = odds.b3 || '-';
+        l3Value = odds.l3 || '-';
+        }
       content.innerHTML += `<tr>
                                 <th>
                                     <i class="fa fa-circle" aria-hidden="true"></i>
@@ -29,23 +45,23 @@ async function getSoccerMatch(){
                                     </a>
                                 </th>
                                 <td>
-                                  <div class="col-div">
-                                      <input type="button" value="${child.odds[0].b1}" class="blue">
-                                      <input type="button" value="${child.odds[0].l1}" class="pink">
-                                  </div>
-                              </td>
-                              <td>
-                                  <div class="col-div">
-                                      <input type="button" value="${child.odds[0].b2}" class="blue">
-                                      <input type="button" value="${child.odds[0].l2}" class="pink">
-                                  </div>
-                              </td>
-                              <td>
-                                  <div class="col-div">
-                                      <input type="button" value="${child.odds[0].b3}" class="blue">
-                                      <input type="button" value="${child.odds[0].l3}" class="pink">
-                                  </div>
-                              </td>
+                                    <div class="col-div">
+                                    <input type="button" value="${b1Value}" class="blue">
+                                    <input type="button" value="${l1Value}" class="pink">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col-div">
+                                    <input type="button" value="${b2Value}" class="blue">
+                                    <input type="button" value="${l2Value}" class="pink">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col-div">
+                                    <input type="button" value="${b3Value}" class="blue">
+                                    <input type="button" value="${l3Value}" class="pink">
+                                    </div>
+                                </td>
                                 <td>
                                     <i class="fas fa-thumbtack"></i>
                                 </td>
