@@ -33,9 +33,9 @@ function showMatchOddsData(data){
                                   <th>
                                       <p><a><img class="icon-predict" src="/user/img/transparent.gif" /></a>${child.name}</p>
                                   </th>
-                                  <td class="back-3">${runner.ex.availableToBack[0]?.price || '--'} <br/> <span>${runner.ex.availableToBack[0]?.size || '--'}</span></td>
+                                  <td class="back-3">${runner.ex.availableToBack[2]?.price || '--'} <br/> <span>${runner.ex.availableToBack[2]?.size || '--'}</span></td>
                                   <td class="back-2">${runner.ex.availableToBack[1]?.price || '--'} <br/> <span>${runner.ex.availableToBack[1]?.size || '--'}</span></td>
-                                  <td class="back-1">${runner.ex.availableToBack[2]?.price || '--'} <br/> <span>${runner.ex.availableToBack[2]?.size || '--'}</span></td>
+                                  <td class="back-1">${runner.ex.availableToBack[0]?.price || '--'} <br/> <span>${runner.ex.availableToBack[0]?.size || '--'}</span></td>
                                   <td class="lay-1">${runner.ex.availableToLay[0]?.price || '--'} <br/> <span>${runner.ex.availableToLay[0]?.size || '--'}</span></td>
                                   <td class="lay-2">${runner.ex.availableToLay[1]?.price || '--'} <br/> <span>${runner.ex.availableToLay[1]?.size || '--'}</span></td>
                                   <td class="lay-3">${runner.ex.availableToLay[2]?.price || '--'} <br/> <span>${runner.ex.availableToLay[2]?.size || '--'}</span></td>
