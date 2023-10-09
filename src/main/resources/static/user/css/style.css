@@ -6017,6 +6017,7 @@ th p {
 .bets .back-3, .bets-HS .back-3, .bets-GH .back-3 {
     background-color: #d7e8f4;
     border-left-color: #fff;
+    padding: 8px;
 }
 .bets .back-2, .bets-HS .back-2, .bets-GH .back-2 {
     background-color: #b7d5eb;

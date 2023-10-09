@@ -3,7 +3,7 @@ function checkInplayStatus(openDate){
     const currentDate = new Date();
     const specifiedDateDate = new Date(specifiedDate.getFullYear(), specifiedDate.getMonth(), specifiedDate.getDate());
     const currentDateDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
-    return specifiedDateDate.getTime() === currentDateDate.getTime() && specifiedDate > currentDate;
+    return specifiedDateDate.getTime() === currentDateDate.getTime() && specifiedDate <= currentDate;
 }
 
 async function getCricketMatch(){
@@ -122,3 +122,4 @@ async function makeApiRequest(competition){
         competitionListElement.appendChild(listItem);
     }
 }
+  
