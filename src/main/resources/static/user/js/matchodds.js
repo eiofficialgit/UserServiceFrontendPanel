@@ -16,14 +16,14 @@ async function getMatchOddsData(){
     const response = await fetch(`http://localhost:7074/exuser/getsportid/${sportId}/${eventId}`);
     const cricketmatches = await response.json();
     document.getElementById("competionField").innerHTML=cricketmatches[0].eventName;
-    showBookmakerMarketData(cricketmatches[0].matchRunners);
 }
-getMatchOddsData();
+
+var matchRunnersData;
 
 function showMatchOddsData(data){
     let content = document.getElementById("content");
     content.innerHTML = "";
-    const matchRunnersData=data.matchRunners;
+    matchRunnersData=data.matchRunners;
     const runnersData=data.data[0].runners;
     for (let i = 0; i < matchRunnersData.length; i++) {
         const child=matchRunnersData[i];
@@ -52,35 +52,43 @@ function showMatchOddsData(data){
 }
 
 function showBookmakerMarketData(data){
-    let bookmakerContent = document.getElementById("bookmakerContent");
-    bookmakerContent.innerHTML = "";
-    for (let i = 0; i < data.length; i++) {
-        const child=data[i];
-        bookmakerContent.innerHTML+=`<tr style="display: table-row;" class="bookmakerRow">
-                                        <td>
-                                            <p>${child.name}</p>
-                                            <span id="withoutBetBook105668" style="" class="win">0</span>
-                                        </td>
-                                        <td colspan="3" class="back-gradient">
-                                        <span class="suspendBookmaker">Suspend</span>
-                                        </td>
-                                        <td colspan="3" class="lay-gradient">
-                                        </td>
-                                    </tr>`;
-    }
+    console.log(data);
+    
+}
+
+function showFancyBetData(data){
+    console.log(data);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    getMatchOddsData();
     oddssocket = io("https://data.betcair.in", { transports: ["websocket"] });
     oddssocket.on("connect", () => {
       console.log("Connection Established");
     });
     const eventId = getEventId();
+
     oddssocket.emit("Event/Auto", eventId);
-    var SocketUrl = "Event/Auto" + "/" + eventId;
-    oddssocket.on(SocketUrl, (result) => {
+    oddssocket.emit("BookM/Auto", eventId);
+    oddssocket.emit("Fancy/Auto", eventId);
+
+    var matchOddsUrl = "Event/Auto" + "/" + eventId;
+    oddssocket.on(matchOddsUrl, (result) => {
       var jsonData = result;
       showMatchOddsData(jsonData);
     });
-  });
 
+    var bookmakerMarketUrl = "BookM/Auto" + "/" + eventId;
+    oddssocket.on(bookmakerMarketUrl, (result) => {
+        var jsonData = result;
+       // Provider - Diamond
+        showBookmakerMarketData(jsonData);
+    });
+
+    var fancyBetUrl = "Fancy/Auto" + "/" + eventId;
+    oddssocket.on(fancyBetUrl, (result) => {
+        var jsonData = result;
+        showFancyBetData(jsonData);
+    });
+
+  });

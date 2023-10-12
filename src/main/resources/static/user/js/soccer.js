@@ -25,8 +25,8 @@ async function getSoccerMatch(){
         let b3Value = '-';
         let l3Value = '-';
 
-        if (child.odds && child.odds[0]) {
-        const odds = child.odds[0];
+        if (child.odds) {
+        const odds = child.odds;
         b1Value = odds.b1 || '-';
         l1Value = odds.l1 || '-';
         b2Value = odds.b2 || '-';

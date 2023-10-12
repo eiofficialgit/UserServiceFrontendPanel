@@ -4809,6 +4809,22 @@ i.fas.fa-alarm-clock {
     margin-bottom: 0;
 }
 
+.back-gradient dl .back1grad, .lay-gradient dl .lay1grad {
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 35px;
+    line-height: 32px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    color: #1e1e1e;
+    text-align: center;
+    cursor: pointer;
+}
+
 .match_odds .pre-cri {
     display: flex;
     justify-content: space-between;
@@ -6539,10 +6555,28 @@ td {
 }
 .suspendBookmaker{
     position: absolute;
-    top: 10px;
-    right: 160px;
-    background-color: rgba(36,58,72,0.4);
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
+    top: 33%;
+    left: 67%;
+    text-align: center;
+    z-index: 999;
+    color: #fff;;
+    opacity: 0.8;
+}
+.fancyRow{
+    position: relative;
+}
+.suspendFancy{
+    position: absolute;
+    margin-top: -2px;
+    left: 56%;
+    text-align: center;
+    z-index: 999;
+    color: #fff;
+    display: flex;
+    width: 16.8%;
+    height: 45px;
+    opacity: 0.8;
+    background-color: rgba(36,58,78,0.9);
+    justify-content: center;
+    align-items: center;
 }

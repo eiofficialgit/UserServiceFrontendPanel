@@ -88,10 +88,9 @@
                             <table class="table bg-book bookMakerWrap">
                                 <thead>
                                     <tr>
-                                        <td colspan="3"></td>
-                                        <td class="back">back</td>
-                                        <td class="lay">lay</td>
-                                        <td colspan="2"></td>
+                                        <td></td>
+                                        <td class="back" colspan="3">back</td>
+                                        <td class="lay" colspan="3">lay</td>
                                     </tr>
                                 </thead>
                                 <tbody id="bookmakerContent">
@@ -111,22 +110,89 @@
                                         Premium Cricket
                                     </a>
                                 </div>
-                                <div id="fancyBetTabWrap" class="fancy_bet_tab-wrap" style="">
+                                <div id="fancyBetTabWrap" class="fancy_bet_tab-wrap">
                                     <ul class="special_bets-tab">
                                         <li class="select" id="fancyTab">
-                                            <a fancybettabtype="1" onclick="changeFancyView('fancy')">All</a>
+                                            <a fancybettabtype="1">All</a>
                                         </li>
                                         <li class="" id="fancy1Tab">
-                                            <a fancybettabtype="2" onclick="changeFancyView('fancy1')">Fancy 1</a>
+                                            <a fancybettabtype="2">Fancy 1</a>
                                         </li>
                                     </ul>
                                 </div>
-
-                                <p id="fancyBetNoBet" class="no_bet" style="display: none">
-                                    has no markets
-                                </p>
-
-                                <table id="fancy_table_own" class="bets"></table>
+                                <table id="fancy_table_own" class="bets">
+                                    <colgroup>
+                                                <col span="1" width="320">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                    </colgroup>
+                                            <thead>
+                                                <tr class="colgroup-adjust">
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr id="fancyBetSpecialBet" class="special_bet">
+                                                    <td colspan="7">
+                                                        <h3 style="line-height:25px;padding-left:5px;">
+                                                            Fancy Bet
+                                                        </h3>
+                                                    </td>
+                                                </tr>
+                                                <tr class="bet-all">
+                                                    <td></td>
+                                                    <td class="refer-bet" colspan="2"></td>
+                                                    <td>No</td>
+                                                    <td>Yes</td>
+                                                    <td class="refer-book" colspan="2"></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="fancyContent">
+                                            </tbody>
+                                            <colgroup>
+                                                <col span="1" width="320">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                                <col span="1" width="70">
+                                            </colgroup>                             
+                                            <thead>
+                                                <tr class="colgroup-adjust">
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr id="fancyBetSpecialBet" class="special_bet">
+                                                    <td colspan="7">
+                                                        <h3 style="line-height:25px;padding-left:5px;">
+                                                            Fancy 1
+                                                        </h3>
+                                                    </td>
+                                                </tr>
+                                                <tr class="bet-all">
+                                                    <td></td>
+                                                    <td class="refer-bet" colspan="2"></td>
+                                                    <td>Back</td>
+                                                    <td>Lay</td>
+                                                    <td class="refer-book" colspan="2"></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="fancyContent1"></tbody>
+                                      </table>
                             </div>
                             <!-- End -->
 
