@@ -52,8 +52,56 @@ function showMatchOddsData(data){
 }
 
 function showBookmakerMarketData(data){
-    console.log(data);
-    
+    let bookmakerContent = document.getElementById("bookmakerContent");
+    bookmakerContent.innerHTML = "";
+    const runnersData=data.data[1].bm1.reverse();
+    for (let i = 0; i < matchRunnersData?.length; i++) {
+        const child=matchRunnersData[i];
+        if (runnersData[i].s === "ACTIVE") {
+            bookmakerContent.innerHTML += `<tr style="display: table-row;" class="bookmakerRow">
+                                            <td style="width: 40%;">
+                                                <p>${child.name}</p>
+                                                <span id="withoutBetBook105668" style="" class="win">0</span>
+                                            </td>
+                                            <td colspan="3" class="back-gradient" style="width: 30%;">
+                                                <dl>
+                                                    <dd>${runnersData[i].b3}</dd>
+                                                    <dd>${runnersData[i].b2}</dd>
+                                                    <dd class="back1grad">${runnersData[i].b1}</dd>
+                                                </dl>
+                                            </td>
+                                            <td colspan="3" class="lay-gradient" style="width: 30%;">
+                                                <dl>
+                                                    <dd class="lay1grad">${runnersData[i].l1}</dd>
+                                                    <dd>${runnersData[i].l2}</dd>
+                                                    <dd>${runnersData[i].l3}</dd>
+                                                </dl>
+                                            </td>
+                                        </tr>`;
+        } else {
+            bookmakerContent.innerHTML +=`<tr style="display: table-row;" class="bookmakerRow">
+                                            <td style="width: 40%;">
+                                                <p>${child.name}</p>
+                                                <span id="withoutBetBook105668" style="" class="win">0</span>
+                                            </td>
+                                            <td colspan="3" class="back-gradient" style="width: 30%; background-color: rgba(36,58,72,0.4);">
+                                                <dl>
+                                                    <dd></dd>
+                                                    <dd></dd>
+                                                    <dd class="back1grad"></dd>
+                                                </dl>
+                                                <span class="suspendBookmaker">Suspend</span>
+                                            </td>
+                                            <td colspan="3" class="lay-gradient" style="width: 30%; background-color: rgba(36,58,72,0.4);">
+                                                <dl>
+                                                    <dd class="lay1grad"></dd>
+                                                    <dd></dd>
+                                                    <dd></dd>
+                                                </dl>
+                                            </td>
+                                        </tr>`;
+        }
+    }
 }
 
 function showFancyBetData(data){
