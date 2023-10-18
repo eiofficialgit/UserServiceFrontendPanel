@@ -105,7 +105,67 @@ function showBookmakerMarketData(data){
 }
 
 function showFancyBetData(data){
-    console.log(data);
+    const fancyBetData=data.data;
+    let fancyContent = document.getElementById("fancyContent");
+    fancyContent.innerHTML = "";
+    for (let i = 0; i < fancyBetData.length; i++) {
+        const child=fancyBetData[i];
+        if(child.gstatus === ""){
+            fancyContent.innerHTML += `<tr style="display: table-row;" class="fancyRow">
+                                            <th colspan="3">
+                                                <dl class="fancy-th-layout">
+                                                    <dt>
+                                                        <p>${child.nat}</p>
+                                                    </dt>
+                                                </dl>
+                                            </th>
+                                            <td colspan="2" class="multi_select">
+                                                <ul style="text-align: center;">
+                                                    <li class="lay-1 fancylay1" id="lay_1">
+                                                        <a id="runsInfo" style="cursor: pointer" ><strong id="fancylay1">${child.l1}</strong><span id="fancylaysize1">${child.ls1}</span></a>
+                                                    </li>
+                                                    <li class="back-1 fancyback1" id="back_1">
+                                                        <a id="runsInfo" style="cursor: pointer"><strong id="fancyback1">${child.b1}</strong><span id="fancybacksize1">${child.bs1}</span></a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td class="td-fancy_merge" colspan="2">
+                                                <dl class="fancy-info">
+                                                    <dt>Min/Max</dt>
+                                                    <dd class="minMaxvalue">${child.min}/${child.max}</dd>
+                                                </dl>
+                                            </td>
+                                        </tr>`;
+        }
+        else {
+            fancyContent.innerHTML += `<tr style="display: table-row;">
+                                            <th colspan="3">
+                                                <dl class="fancy-th-layout">
+                                                    <dt>
+                                                        <p>${child.nat}</p>
+                                                    </dt>
+                                                </dl>
+                                            </th>
+                                            <td colspan="2" class="multi_select">
+                                                <ul style="text-align: center;">
+                                                    <li class="lay-1 fancylay1" id="lay_1">
+                                                        <a id="runsInfo" style="cursor: pointer" ><strong id="fancylay1">0</strong><span id="fancylaysize1">0</span></a>
+                                                    </li>
+                                                    <li class="back-1 fancyback1" id="back_1">
+                                                        <a id="runsInfo" style="cursor: pointer"><strong id="fancyback1">0</strong><span id="fancybacksize1">0</span></a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td class="td-fancy_merge" colspan="2">
+                                                <dl class="fancy-info">
+                                                    <dt>Min/Max</dt>
+                                                    <dd class="minMaxvalue">${child.min}/${child.max}</dd>
+                                                </dl>
+                                                <span class="suspendFancy">Suspend</span>
+                                            </td>
+                                        </tr>`;
+        }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
